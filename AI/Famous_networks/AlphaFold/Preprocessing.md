@@ -1,5 +1,9 @@
-[[Similarity Search]]
-[[Multiple Sequence Alignment]]
-[[Clustering]]
-[[Embeddings]]
+## Evolutionary information
+First block in the Alpha Fold pipeline
+The network relies on the fact that protein evolution and its resulting sequence variability between organisms is constrained by the maintained functionality of the protein, meaning that if the proteins function is necesary or at least beneficial to the organism in its enviorment, the random aminoacid changes that can occur are subject to the selection process that forces it to keep the function and therefore its structure.
+This is particularly noticable in positions whose interaction is important in keeping the structure of the protein, for example if two distant opposite charged aminoacid interact in the human protein, that interaction is going to be conserved in other organisms aswell, and the aminoacid responsible are going to be conserved and more importantly coevolved, meaning that if some change that happened in the bird protein in the first aminoacid changed its charge, the second aminoacid is going to be selected to also have changed the charge so the interaction stays.
+
+## Pipeline
+All this means that in order to feed the network with information it can use we need to give it evolutionary data from homologous proteins to the input, in order to get that information the algorithm performs a [[Similarity Search]] on genetic databases with our input sequence as query and then with the obtained homologous protein sequences it performs a [[Multiple Sequence Alignment]] which aligns positions in all the sequences that are predicted to have occupied the same position in the common origin.
+Then in order to reduce the ammount of sequences that are going to be fed to the network and thus reduce the computational requirements it performs a [[Clustering]] that groups sequences into clusters. Finally since neural networks require numerical inputs the data collected is passed through [[Embeddings]] that return numerical arrays ready to be fed to the [[Evoformer]]
 ![[Preprocessing.canvas]]
