@@ -35,8 +35,12 @@
             "id": "c86d980bd30eda3e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -106,6 +110,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -122,6 +127,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -132,7 +138,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md"
+          }
         }
       }
     ],
@@ -152,34 +160,36 @@
   },
   "active": "c86d980bd30eda3e",
   "lastOpenFiles": [
+    "AI/Theory/Transformer/Transformer.canvas",
+    "AI/Theory/Transformer/Transformer.md",
+    "AI/Theory/Transformer/Embedding + Positional Encoding.md",
+    "AI/Theory/Transformer/Self-Attention.md",
+    "AI/Theory/Transformer/Multi-head Attention.md",
+    "AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.md",
+    "AI/Famous_networks/AlphaFold/MSA column-wise gated self-attention.md",
+    "AI/Famous_networks/AlphaFold/MSA column-wise gated self-attention.canvas",
+    "AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.canvas",
+    "AI/Theory/Basics/Attention.md",
+    "AI/Famous_networks/AlphaFold/AlphaFold.canvas",
     "AI/Famous_networks/AlphaFold/AlphaFold.md",
     "AI/Famous_networks/AlphaFold/Preprocessing.md",
-    "AI/Famous_networks/AlphaFold/Similarity Search.md",
-    "AI/Theory/Transformer/Transformer.canvas",
-    "AI/Famous_networks/AlphaFold/Preprocessing.canvas",
-    "AI/Famous_networks/AlphaFold/AlphaFold.canvas",
-    "AI/Famous_networks/AlphaFold/MSA column-wise gated self-attention.canvas",
-    "AI/Famous_networks/AlphaFold/Embeddings.md",
     "AI/Famous_networks/AlphaFold/Evoformer.md",
-    "AI/Famous_networks/AlphaFold/MSA column-wise gated self-attention.md",
+    "AI/Famous_networks/AlphaFold/Similarity Search.md",
+    "AI/Famous_networks/AlphaFold/Preprocessing.canvas",
+    "AI/Famous_networks/AlphaFold/Embeddings.md",
     "AI/Famous_networks/AlphaFold/Structure Block.md",
-    "AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.md",
     "Untitled.canvas",
     "Untitled 2.md",
     "Untitled 1.md",
     "2023-11-06.md",
     "Programing/OOP design patterns/Strategy pattern.md",
     "Programing/OOP design patterns/Composite pattern.md",
-    "AI/Theory/Transformer/Transformer.md",
-    "AI/Theory/Transformer/Self-Attention.md",
     "AI/Theory/Transformer/Pasted image 20231106190737.jpg",
     "AI/Theory/Transformer/Pasted image 20231106190649.jpg",
     "AI/Theory/Transformer/Pasted image 20231106183038.png",
     "AI/Theory/Transformer/Pasted image 20231106183023.png",
     "AI/Theory/Transformer/Multi-head attention.canvas",
-    "AI/Theory/Transformer/Multi-head Attention.md",
     "AI/Theory/Transformer/Encoder.md",
-    "AI/Theory/Transformer/Embedding + Positional Encoding.md",
     "AI/Theory/Transformer/Decoder.md",
     "AI/Theory/Basics/Layer Norm.md",
     "AI/Theory/Basics/Gradient Descent.md",
@@ -187,8 +197,6 @@
     "AI/Theory/Basics/Embedding.md",
     "AI/My_projects/Wkiki/Wkiki.md",
     "AI/Famous_networks/AlphaFold/Multiple Sequence Alignment.md",
-    "AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.canvas",
-    "AI/Famous_networks/AlphaFold/Clustering.md",
     "Programing/OOP design patterns",
     "Programing",
     "AI/Theory/Transformer",

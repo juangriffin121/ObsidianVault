@@ -3,5 +3,5 @@ In the attention algorithm you have sets of keys and values which are sets of ve
 this leaves us after the query key dots with Nheads of (Nres,Nres) matrices, relating each position in the alignment with every other, the same shape of the pair representation and since the network learns to use the evolutionary information from the msa to the interactions, this is a good point to add the information from the pair representation to the msa representation, so its added there as a bias by applying a linear transformation from 
 (Nres;Nres,128) to (Nres;Nres,Nheads).
 Finally as a last step that differs from the basic multihead attention  layer theres another tensor calculated from the MSA, G which is the multiplied pointwise after the attention algorithm.
-[[Self-Attention]]
+[[Attention]]
 ![[MSA column-wise gated self-attention.canvas]]

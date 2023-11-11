@@ -8,6 +8,6 @@ The algorithm consists of three parts:
 		The main neural network of the algorithm. Returns output tensors of the same shape as its imput and is fed back 3 times before returning its final output
 	[[Structure Block]]
 		Receives the output of the evoformer and uses it to construct the final 3D representation
-
+#done
 ![[AlphaFold.canvas]]
 

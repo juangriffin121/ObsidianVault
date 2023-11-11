@@ -1,2 +1,2 @@
-[[Self-Attention]]
+[[Attention]]
 ![[Multi-head attention.canvas]]

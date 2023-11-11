@@ -52,7 +52,7 @@
 		{"id":"4b531b56090041a6","type":"text","text":"# $B2$","x":2125,"y":2640,"width":366,"height":131,"color":"2"},
 		{"id":"456067b873604203","type":"text","text":"# $B3$","x":2125,"y":2775,"width":366,"height":131,"color":"2"},
 		{"id":"5369b585e5478ece","type":"text","text":"# $B4$","x":2125,"y":2905,"width":366,"height":131,"color":"2"},
-		{"id":"614c561bea66a0e0","type":"text","text":"[[Self-Attention]]","x":2440,"y":3114,"width":250,"height":60},
+		{"id":"614c561bea66a0e0","type":"text","text":"[[Attention]]","x":2440,"y":3114,"width":250,"height":60},
 		{"id":"b4ef73d83a52b4e1","type":"text","text":"Sigmoid","x":2698,"y":2360,"width":250,"height":60},
 		{"id":"0c47ed928660f2cc","type":"text","text":"# MSA representation\n(Nclust; Nres; 256)\n\none aminoacid in one of the clusters is a 256 embedded vector","x":1240,"y":-680,"width":360,"height":541},
 		{"id":"403d9ffef6e2dfbf","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":1295,"y":-40,"width":250,"height":50},

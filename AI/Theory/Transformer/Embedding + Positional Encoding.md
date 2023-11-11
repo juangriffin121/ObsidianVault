@@ -13,6 +13,7 @@ Vector for word at pos = 5
 ![[Pasted image 20231106183023.png]]
 all position encoder vectors up to 1000 positions
 ![[Pasted image 20231106183038.png]]
-code for those images:
+code for those images: UPLOAD IT TO GITHUBBBB
 C:\Users\Usuario\my_scripts\PositionalEncoder.py
+#done 
 
