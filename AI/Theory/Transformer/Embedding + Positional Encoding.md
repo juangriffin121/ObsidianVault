@@ -9,9 +9,9 @@ $PE(pos)[2i] = sin(\frac {pos}{10000^{\frac{2i}{d_{model}}}})$
 
 $PE(pos)[2i +1 ] = cos(\frac {pos}{10000^{\frac{2i}{d_{model}}}})$
 
-Vector for word at pos = 5
+Vector for word at pos = 5:
 ![[Pasted image 20231106183023.png]]
-all position encoder vectors up to 1000 positions
+all position encoder vectors up to 1000 positions:
 ![[Pasted image 20231106183038.png]]
 code for those images: UPLOAD IT TO GITHUBBBB
 C:\Users\Usuario\my_scripts\PositionalEncoder.py

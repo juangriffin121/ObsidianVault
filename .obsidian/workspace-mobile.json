@@ -35,12 +35,8 @@
             "id": "c86d980bd30eda3e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -110,7 +106,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -127,7 +122,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -138,9 +132,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "AI/Theory/Transformer/Embedding + Positional Encoding.md"
-          }
+          "state": {}
         }
       }
     ],
@@ -160,12 +152,15 @@
   },
   "active": "c86d980bd30eda3e",
   "lastOpenFiles": [
+    "AI/Theory/Transformer/Embedding + Positional Encoding.md",
+    "AI/Famous_networks/AlphaFold/Evoformer.md",
+    "AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.md",
+    "AI/Famous_networks/AlphaFold/Embeddings.md",
+    "AI/Famous_networks/AlphaFold/Multiple Sequence Alignment.md",
     "AI/Theory/Transformer/Transformer.canvas",
     "AI/Theory/Transformer/Transformer.md",
-    "AI/Theory/Transformer/Embedding + Positional Encoding.md",
     "AI/Theory/Transformer/Self-Attention.md",
     "AI/Theory/Transformer/Multi-head Attention.md",
-    "AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.md",
     "AI/Famous_networks/AlphaFold/MSA column-wise gated self-attention.md",
     "AI/Famous_networks/AlphaFold/MSA column-wise gated self-attention.canvas",
     "AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.canvas",
@@ -173,10 +168,8 @@
     "AI/Famous_networks/AlphaFold/AlphaFold.canvas",
     "AI/Famous_networks/AlphaFold/AlphaFold.md",
     "AI/Famous_networks/AlphaFold/Preprocessing.md",
-    "AI/Famous_networks/AlphaFold/Evoformer.md",
     "AI/Famous_networks/AlphaFold/Similarity Search.md",
     "AI/Famous_networks/AlphaFold/Preprocessing.canvas",
-    "AI/Famous_networks/AlphaFold/Embeddings.md",
     "AI/Famous_networks/AlphaFold/Structure Block.md",
     "Untitled.canvas",
     "Untitled 2.md",
@@ -196,7 +189,6 @@
     "AI/Theory/Basics/Gradient Descent.canvas",
     "AI/Theory/Basics/Embedding.md",
     "AI/My_projects/Wkiki/Wkiki.md",
-    "AI/Famous_networks/AlphaFold/Multiple Sequence Alignment.md",
     "Programing/OOP design patterns",
     "Programing",
     "AI/Theory/Transformer",
