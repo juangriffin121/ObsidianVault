@@ -5,6 +5,6 @@ This is particularly noticable in positions whose interaction is important in ke
 
 ## Pipeline
 All this means that in order to feed the network with information it can use we need to give it evolutionary data from homologous proteins to the input, in order to get that information the algorithm performs a [[Similarity Search]] on genetic databases with our input sequence as query and then with the obtained homologous protein sequences it performs a [[Multiple Sequence Alignment]] which aligns positions in all the sequences that are predicted to have occupied the same position in the common origin.
-Then in order to reduce the ammount of sequences that are going to be fed to the network and thus reduce the computational requirements it performs a [[Clustering]] that groups sequences into clusters. Finally since neural networks require numerical inputs the data collected is passed through [[Embeddings]] that return numerical arrays ready to be fed to the [[Evoformer]].
+Then in order to reduce the ammount of sequences that are going to be fed to the network and thus reduce the computational requirements it performs a [[Sequence Clustering]] that groups sequences into clusters. Finally since neural networks require numerical inputs the data collected is passed through [[Embeddings]] that return numerical arrays ready to be fed to the [[Evoformer]].
 #done 
 ![[Preprocessing.canvas]]

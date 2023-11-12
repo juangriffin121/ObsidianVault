@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"9d1541ae472fc129","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/Template single features.md","x":-1285,"y":655,"width":202,"height":145},
+		{"id":"0463b95658bee68f","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/MSA representation.md","x":-1285,"y":-132,"width":202,"height":320},
+		{"id":"660e269b2b5d169f","type":"file","file":"AI/Famous_networks/AlphaFold/MSA row-wise gated self-attention with pair bias.canvas","x":-971,"y":-547,"width":760,"height":784},
+		{"id":"6454beef04ec739f","type":"file","file":"AI/Famous_networks/AlphaFold/MSA column-wise gated self-attention.canvas","x":190,"y":-547,"width":760,"height":784},
+		{"id":"b81b201f44d56797","type":"text","text":"# MSA repr $\\textbf m_{si}$\n(Nclust ;Nres ; 256)\n\none aminoacid in one of the clusters is a 256 embedded vector","x":1083,"y":-132,"width":202,"height":320},
+		{"id":"69151b5186b4642e","type":"text","text":"# Pair repr $\\textbf z_{ij}$\n(Nres;Nres;128)\n20aa + unknown","x":-971,"y":-800,"width":202,"height":207},
+		{"id":"8b182be667087c5d","type":"text","text":"# Pair repr $\\textbf z_{ij}$\n(Nres;Nres;128)\n20aa + unknown","x":1083,"y":-800,"width":202,"height":207},
+		{"id":"34c0e69176d284b2","type":"text","text":"# MSA repr $\\textbf m_{si}$\n(Nclust ;Nres ; 256)\n\none aminoacid in one of the clusters is a 256 embedded vector","x":-123,"y":-132,"width":202,"height":320},
+		{"id":"b482af6800fee769","type":"text","text":"# Template pair feat\n(Ntempl ;Nres ;Nres ; 88)\ndistance information grouped into 39 bins ","x":1083,"y":399,"width":202,"height":207},
+		{"id":"37a136cb9d223e6c","type":"text","text":"# Extra MSA feat\n(Nextra_seq ;Nres ; 23)\nextra msa one hot + deletion info","x":1083,"y":238,"width":202,"height":115},
+		{"id":"29020e1972f00d52","type":"text","text":"# Template single feat\n(N templ ;Nres ; 51)\n20 amino acids + unknown and gap).","x":1083,"y":655,"width":202,"height":145},
+		{"id":"c190e0f4bd94941c","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/Pair representation.md","x":-1285,"y":-385,"width":202,"height":207},
+		{"id":"87c025ee5d31eb9e","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/Extra MSA features.md","x":-1285,"y":237,"width":202,"height":115},
+		{"id":"8467e40317fe750a","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/Template pair features.md","x":-1285,"y":398,"width":202,"height":207},
+		{"id":"faa0d1c451323047","x":-222,"y":-1200,"width":400,"height":400,"type":"file","file":"AI/Famous_networks/AlphaFold/Evoformer.md"}
+	],
+	"edges":[
+		{"id":"8b76331296c1841f","fromNode":"9d1541ae472fc129","fromSide":"right","toNode":"29020e1972f00d52","toSide":"left"},
+		{"id":"59847ca7899ed72a","fromNode":"0463b95658bee68f","fromSide":"right","toNode":"660e269b2b5d169f","toSide":"left"},
+		{"id":"cc050f78c3ee2e08","fromNode":"660e269b2b5d169f","fromSide":"right","toNode":"34c0e69176d284b2","toSide":"left"},
+		{"id":"1c2e4ecc0e83deb2","fromNode":"c190e0f4bd94941c","fromSide":"right","toNode":"660e269b2b5d169f","toSide":"left"},
+		{"id":"276f9cb152eb95cb","fromNode":"6454beef04ec739f","fromSide":"right","toNode":"b81b201f44d56797","toSide":"left"},
+		{"id":"def947d905da21c5","fromNode":"34c0e69176d284b2","fromSide":"right","toNode":"6454beef04ec739f","toSide":"left"},
+		{"id":"75d3ca801cf84091","fromNode":"69151b5186b4642e","fromSide":"right","toNode":"8b182be667087c5d","toSide":"left"},
+		{"id":"a6fc4e74d6c25dd7","fromNode":"c190e0f4bd94941c","fromSide":"top","toNode":"69151b5186b4642e","toSide":"left"},
+		{"id":"b51c4c29a5291afd","fromNode":"8467e40317fe750a","fromSide":"right","toNode":"b482af6800fee769","toSide":"left"},
+		{"id":"61e76a8f081d2240","fromNode":"87c025ee5d31eb9e","fromSide":"right","toNode":"37a136cb9d223e6c","toSide":"left"}
+	]
+}

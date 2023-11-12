@@ -12,3 +12,16 @@ The full network is also run three times (Ncycle) with the same input, feeding i
 
 The network is fed an msa representation $\textbf m_{ij}$ (an embedded form of the msa from preprosessing in which each position in the alignment in esch cluster is a vector pf 256 dimension) of shape: (Nclust, Nres, 256) and a pair representation $\textbf z_{ij}$ (an embedded form of pairs of positions in the input secuence) of shape: (Nres,Nres,128) and ==other tensors==, the msa is processed in an [[MSA row-wise gated self-attention with pair bias]] layer that linearly combines the position matrices(vector of vectors of shape: (Nclust,256)), that represent a position in the alignement in all the clusters, with weights determined by the similarity(dot product) between pairs of positions, since the dot product between pairs is a matrix of shape: (Nres,Nres) the pair representation is added as a bias to that matrix before continuing with the attention algorithm.
 A similar procedure is later done with pairs of cluster sequences instead of positions in the [[MSA column-wise gated self-attention]] that also returns an msa reoresentation without biasing with the pair representation.
+
+Inputs:
+	MSA info:
+		[[MSA representation]]
+		[[Extra MSA features]]
+	Input sequence info:
+		[[Pair representation]]
+	Templates info:
+		[[Template pair features]]
+		[[Template single features]]
+
+Outputs are the same as the inputs.
+![[Evoformer.canvas]]
