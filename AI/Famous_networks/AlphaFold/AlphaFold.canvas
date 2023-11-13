@@ -14,7 +14,7 @@
 		{"id":"0132e244e26565b6","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/Pair representation.md","x":3760,"y":-1345,"width":202,"height":207},
 		{"id":"7ac34e8b8cb2b529","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/Extra MSA features.md","x":3760,"y":-723,"width":202,"height":115},
 		{"id":"7b9eaa111c9bcd85","type":"file","file":"AI/Famous_networks/AlphaFold/Tensors/Template pair features.md","x":3760,"y":-562,"width":202,"height":207},
-		{"id":"5eb39e253ea17261","x":2776,"y":200,"width":250,"height":60,"type":"text","text":"# Ncycles"}
+		{"id":"5eb39e253ea17261","type":"text","text":"# Ncycles","x":2776,"y":400,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"4d969431a86081c7","fromNode":"535492f0b30ee805","fromSide":"right","toNode":"dddc77d6ffb82b12","toSide":"left"},
@@ -32,7 +32,8 @@
 		{"id":"08392e525133beb5","fromNode":"7402abb2cc0e8540","fromSide":"right","toNode":"b84797cae44fb35e","toSide":"left"},
 		{"id":"e596e3fe16c078ac","fromNode":"7402abb2cc0e8540","fromSide":"right","toNode":"7ac34e8b8cb2b529","toSide":"left"},
 		{"id":"2cded101bb6d8959","fromNode":"7402abb2cc0e8540","fromSide":"right","toNode":"7b9eaa111c9bcd85","toSide":"left"},
-		{"id":"4f1cbbc49aa4a724","fromNode":"7402abb2cc0e8540","fromSide":"bottom","toNode":"5eb39e253ea17261","toSide":"right"},
-		{"id":"6713d4773f610892","fromNode":"5eb39e253ea17261","fromSide":"left","toNode":"7402abb2cc0e8540","toSide":"bottom"}
+		{"id":"9d29aab62cfd1172","fromNode":"5eb39e253ea17261","fromSide":"left","toNode":"7402abb2cc0e8540","toSide":"left"},
+		{"id":"9a10b1617ad7532e","fromNode":"7402abb2cc0e8540","fromSide":"right","toNode":"5eb39e253ea17261","toSide":"right"},
+		{"id":"36fa03833ba6a4a5","fromNode":"7402abb2cc0e8540","fromSide":"right","toNode":"3df12cb38bd467fd","toSide":"left"}
 	]
 }

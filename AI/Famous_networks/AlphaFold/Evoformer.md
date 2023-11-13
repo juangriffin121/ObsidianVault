@@ -5,7 +5,7 @@ This block is a deep neural network that consists of 48 units that return the sa
 	A pair representation
 	Template pair information
 	Template single information
-This tensors are computed N_ensemble times with stochastic variation in the methods (different cllustering, order in sequences, deletions) in the ==preprocessing== stage and the ==outputs== of the different ensembles are then averaged
+This tensors are computed N_ensemble times with stochastic variation in the methods (different cllustering, order in sequences, deletions) in the ==preprocessing== stage, and the ==outputs== of the different ensembles are then averaged
 The full network is also run three times (Ncycle) with the same input, feeding its output back onto the network, before returning its final output to the [[Structure Block]].
 
 ## Evoformer Unit

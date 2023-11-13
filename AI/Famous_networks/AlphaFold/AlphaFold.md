@@ -1,4 +1,4 @@
-AlphaFold is a machine learning algorithm designed my the deepmind group to compete in the CASP protein folding prediction competition.
+AlphaFold is a machine learning algorithm designed by the deepmind group to compete in the CASP protein folding prediction competition.
 The algorithm takes an aminoacid sequence as an input and returns a 3D representation of all the residues of the protein.
 The algorithm consists of three parts:
 	[[Preprocessing]]
