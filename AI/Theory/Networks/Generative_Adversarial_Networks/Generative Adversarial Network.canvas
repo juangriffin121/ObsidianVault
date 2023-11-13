@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"1c09205c1e9c2a94","type":"file","file":"AI/Theory/Networks/Generative_Adversarial_Networks/Generator.md","x":-960,"y":15,"width":260,"height":85},
+		{"id":"ab9a97728e5ea7fa","type":"file","file":"AI/Theory/Networks/Generative_Adversarial_Networks/Discriminator.md","x":200,"y":15,"width":263,"height":85},
+		{"id":"55d73cd88c5889bf","type":"text","text":"# Generated Images","x":-160,"y":-1040,"width":260,"height":800,"color":"3"},
+		{"id":"d430ee975a4a2b2e","type":"text","text":"# Real Images","x":-160,"y":400,"width":261,"height":800,"color":"3"},
+		{"id":"3011eacbaa7541dc","type":"text","text":"# Z = P(its real)","x":600,"y":28,"width":250,"height":60,"color":"5"},
+		{"id":"8fbc0c3b8c22fdd2","type":"text","text":"# Bool(its real)","x":1100,"y":28,"width":250,"height":60},
+		{"id":"a2efaed100c16058","type":"text","text":"# Params","x":200,"y":380,"width":263,"height":100,"color":"6"},
+		{"id":"c3e4c5383503e977","type":"text","text":"# $\\frac {\\partial E}{\\partial Y}$","x":-560,"y":100,"width":260,"height":260,"color":"4"},
+		{"id":"eabf4c1871338c5e","type":"text","text":"# Generated image Y\n\n","x":-560,"y":-240,"width":260,"height":255,"color":"5"},
+		{"id":"ae57cf8c488338a3","type":"file","file":"AI/Theory/Basics/Gradient Descent.canvas","x":230,"y":129,"width":203,"height":202},
+		{"id":"41bd538b248c0748","type":"text","text":"# $\\frac {\\partial E}{\\partial Z}$","x":600,"y":200,"width":250,"height":60,"color":"4"},
+		{"id":"d7ffc6d8fbf11d8f","type":"text","text":"# Loss","x":900,"y":190,"width":160,"height":80,"color":"1"},
+		{"id":"6c352ef69b12b288","type":"file","file":"AI/Theory/Basics/Gradient Descent.canvas","x":-931,"y":130,"width":203,"height":200},
+		{"id":"a5fa044a46457ef2","x":-960,"y":400,"width":260,"height":80,"color":"6","type":"text","text":"# Params"},
+		{"id":"d0f534ea01877df1","x":-1360,"y":-240,"width":280,"height":255,"color":"3","type":"text","text":"# Noicy Image X"}
+	],
+	"edges":[
+		{"id":"cc310f7c2dd6d0df","fromNode":"eabf4c1871338c5e","fromSide":"right","toNode":"55d73cd88c5889bf","toSide":"bottom"},
+		{"id":"03650715603d4ad0","fromNode":"55d73cd88c5889bf","fromSide":"right","toNode":"ab9a97728e5ea7fa","toSide":"left"},
+		{"id":"c97e06e172098a0c","fromNode":"d430ee975a4a2b2e","fromSide":"right","toNode":"ab9a97728e5ea7fa","toSide":"left"},
+		{"id":"412771da825216d7","fromNode":"ab9a97728e5ea7fa","fromSide":"right","toNode":"3011eacbaa7541dc","toSide":"left"},
+		{"id":"4ac094d7c6796189","fromNode":"55d73cd88c5889bf","fromSide":"right","toNode":"8fbc0c3b8c22fdd2","toSide":"top"},
+		{"id":"6a3d4b7198fce9fc","fromNode":"d430ee975a4a2b2e","fromSide":"right","toNode":"8fbc0c3b8c22fdd2","toSide":"bottom"},
+		{"id":"c234039dce1797e4","fromNode":"3011eacbaa7541dc","fromSide":"right","toNode":"d7ffc6d8fbf11d8f","toSide":"top"},
+		{"id":"0f505dabdc497f8e","fromNode":"8fbc0c3b8c22fdd2","fromSide":"left","toNode":"d7ffc6d8fbf11d8f","toSide":"top"},
+		{"id":"9b30cda80df8fa68","fromNode":"ab9a97728e5ea7fa","fromSide":"bottom","toNode":"ae57cf8c488338a3","toSide":"top"},
+		{"id":"b602eb7380adf2e4","fromNode":"ae57cf8c488338a3","fromSide":"bottom","toNode":"a2efaed100c16058","toSide":"top"},
+		{"id":"55cb0aa5429187c3","fromNode":"a2efaed100c16058","fromSide":"left","toNode":"ab9a97728e5ea7fa","toSide":"left"},
+		{"id":"87b85548209fdffe","fromNode":"1c09205c1e9c2a94","fromSide":"right","toNode":"eabf4c1871338c5e","toSide":"left"},
+		{"id":"136786793886d314","fromNode":"d7ffc6d8fbf11d8f","fromSide":"left","toNode":"41bd538b248c0748","toSide":"right"},
+		{"id":"6f95244b32470b57","fromNode":"41bd538b248c0748","fromSide":"left","toNode":"ae57cf8c488338a3","toSide":"right"},
+		{"id":"6c2606d26eeff4fd","fromNode":"ae57cf8c488338a3","fromSide":"left","toNode":"c3e4c5383503e977","toSide":"right","label":"-"},
+		{"id":"e14f3d11bf9ba62f","fromNode":"c3e4c5383503e977","fromSide":"left","toNode":"6c352ef69b12b288","toSide":"right"},
+		{"id":"e6e0dd3ac757fda4","fromNode":"1c09205c1e9c2a94","fromSide":"bottom","toNode":"6c352ef69b12b288","toSide":"top"},
+		{"id":"29c0e40c52a452cd","fromNode":"6c352ef69b12b288","fromSide":"bottom","toNode":"a5fa044a46457ef2","toSide":"top"},
+		{"id":"ff983e9993745e5a","fromNode":"a5fa044a46457ef2","fromSide":"left","toNode":"1c09205c1e9c2a94","toSide":"left"},
+		{"id":"990bda8c09549be7","fromNode":"d0f534ea01877df1","fromSide":"right","toNode":"1c09205c1e9c2a94","toSide":"left"}
+	]
+}
