@@ -23,11 +23,11 @@
 		{"id":"5f844415ba7a50f9","type":"file","file":"AI/Theory/Transformer/Multi-head attention.canvas","x":-939,"y":280,"width":400,"height":336},
 		{"id":"bc2660ca2c0e8b55","type":"text","text":"# FeedForward","x":-873,"y":777,"width":265,"height":50,"color":"6"},
 		{"id":"c1c27ed2ff75faf4","type":"text","text":"# Linear","x":-1612,"y":1736,"width":250,"height":50},
-		{"id":"5b56c36ba2032d22","x":-1677,"y":1560,"width":383,"height":67,"color":"3","type":"file","file":"AI/Theory/Basics/Layer Norm.md"},
-		{"id":"29dfed9304f9e5ee","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":-1677,"y":1360,"width":383,"height":67,"color":"3"},
-		{"id":"320996d604299687","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":-1678,"y":870,"width":383,"height":67,"color":"3"},
-		{"id":"e387a4b381046bee","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":-932,"y":660,"width":383,"height":67,"color":"3"},
-		{"id":"384c0fe5e3fdbd14","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":-932,"y":878,"width":383,"height":67,"color":"3"}
+		{"id":"5b56c36ba2032d22","x":-1677,"y":1560,"width":383,"height":67,"color":"3","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md"},
+		{"id":"29dfed9304f9e5ee","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":-1677,"y":1360,"width":383,"height":67,"color":"3"},
+		{"id":"320996d604299687","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":-1678,"y":870,"width":383,"height":67,"color":"3"},
+		{"id":"e387a4b381046bee","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":-932,"y":660,"width":383,"height":67,"color":"3"},
+		{"id":"384c0fe5e3fdbd14","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":-932,"y":878,"width":383,"height":67,"color":"3"}
 	],
 	"edges":[
 		{"id":"1a4166aa7fcfb200","fromNode":"b9a0588d1e69477d","fromSide":"bottom","toNode":"5f844415ba7a50f9","toSide":"top"},

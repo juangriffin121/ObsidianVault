@@ -55,8 +55,8 @@
 		{"id":"614c561bea66a0e0","type":"text","text":"[[Attention]]","x":2440,"y":3114,"width":250,"height":60},
 		{"id":"b4ef73d83a52b4e1","type":"text","text":"Sigmoid","x":2698,"y":2360,"width":250,"height":60},
 		{"id":"0c47ed928660f2cc","type":"text","text":"# MSA representation\n(Nclust; Nres; 256)\n\none aminoacid in one of the clusters is a 256 embedded vector","x":1240,"y":-680,"width":360,"height":541},
-		{"id":"403d9ffef6e2dfbf","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":1295,"y":-40,"width":250,"height":50},
-		{"id":"014d6123015514a5","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":2175,"y":-40,"width":250,"height":50},
+		{"id":"403d9ffef6e2dfbf","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":1295,"y":-40,"width":250,"height":50},
+		{"id":"014d6123015514a5","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":2175,"y":-40,"width":250,"height":50},
 		{"id":"8db9055dcbd7b13c","type":"text","text":"# Pair repr $\\textbf z_{ij}$\n(Nres;Nres;128)\n20aa + unknown","x":2120,"y":-680,"width":360,"height":352},
 		{"id":"ff596af3d062449c","type":"text","text":"# Pair repr $\\textbf z_{ij}$\n(Nres;Nres;128)\n20aa + unknown","x":2120,"y":134,"width":360,"height":352}
 	],

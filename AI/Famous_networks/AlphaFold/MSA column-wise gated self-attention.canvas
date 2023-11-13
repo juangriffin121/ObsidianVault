@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"12c79f5f537c46b7","type":"text","text":"# MSA representation $\\textbf m_{ij}$\n(Nclust ;Nres ; 256)\n\none aminoacid in one of the clusters ($\\textbf m_{ij}$) is a 256 embedded vector\n","x":1240,"y":-880,"width":360,"height":541},
-		{"id":"945283448c5a179d","type":"file","file":"AI/Theory/Basics/Layer Norm.md","x":1297,"y":-184,"width":247,"height":50},
+		{"id":"945283448c5a179d","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":1297,"y":-184,"width":247,"height":50},
 		{"id":"94babfc9b8631a46","type":"text","text":"# $\\textbf m_{ij}^T$\n(Nres ; Nclust ; 256)\n\none aminoacid in one of the clusters is a 256 embedded vector","x":1154,"y":120,"width":534,"height":360},
 		{"id":"547f6f6fbe8a2dd7","type":"text","text":"# V\n(Nres, Nclust)","x":1794,"y":720,"width":534,"height":358,"color":"5"},
 		{"id":"a3969730e7489f93","type":"text","text":"# $W^V$\n\n(Nclust,Nclust)","x":1794,"y":1220,"width":534,"height":358,"color":"5"},
