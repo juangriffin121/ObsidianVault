@@ -13,4 +13,4 @@ class Composite:
 		self.contents.append(entry)
 ```
 
-Example sklearn transformers, 
+Example sklearn transformers
