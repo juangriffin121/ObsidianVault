@@ -18,7 +18,7 @@
 		{"id":"e549944fed370f26","type":"text","text":"# Template sequence\n(Ntempl ;Nres ;22)\n20 amino acids + unknown and gap).","x":-1181,"y":1330,"width":505,"height":157},
 		{"id":"0822187b001271a9","type":"text","text":"# Template torsion info\n(Ntempl ;Nres ;42)\ninformation about torsion angles in those residues backbone carbons","x":-1181,"y":1527,"width":505,"height":200},
 		{"id":"50c7996f5f8548b9","type":"text","text":"# Template distogram\n(Ntempl ;Nres ;Nres ; 39)\ndistance information grouped into 39 bins ","x":-1181,"y":185,"width":505,"height":510},
-		{"id":"1696afc18c1d135a","type":"file","file":"AI/Famous_networks/AlphaFold/Multiple Sequence Alignment.md","x":-1641,"y":-475,"width":240,"height":150,"color":"4"},
+		{"id":"1696afc18c1d135a","type":"file","file":"BioInfo/Multiple Sequence Alignment.md","x":-1641,"y":-475,"width":240,"height":150,"color":"4"},
 		{"id":"48a74da1d35329bf","type":"text","text":"# Template Search","x":-1651,"y":865,"width":250,"height":170,"color":"4"},
 		{"id":"c232a2cb5e04e221","type":"text","text":"# Target Feat\n(Nres;21)\n20aa + unknown","x":-1182,"y":-1419,"width":505,"height":91},
 		{"id":"2b4d285ff1d06aec","type":"file","file":"AI/Famous_networks/AlphaFold/Preprocessing.md","x":-2724,"y":-1720,"width":648,"height":623},
