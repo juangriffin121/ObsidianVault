@@ -9,6 +9,9 @@ $PE(pos)[2i] = sin(\frac {pos}{10000^{\frac{2i}{d_{model}}}})$
 
 $PE(pos)[2i +1 ] = cos(\frac {pos}{10000^{\frac{2i}{d_{model}}}})$
 
+$PE(pos + \Delta) - PE(pos) \not = PE(\Delta)$
+
+
 Vector for word at pos = 5:
 ![[Pasted image 20231106183023.png]]
 all position encoder vectors up to 1000 positions:
