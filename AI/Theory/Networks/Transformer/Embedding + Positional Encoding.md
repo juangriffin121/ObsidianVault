@@ -18,5 +18,8 @@ all position encoder vectors up to 1000 positions:
 ![[Pasted image 20231106183038.png]]
 code for those images: UPLOAD IT TO GITHUBBBB
 C:\Users\Usuario\my_scripts\PositionalEncoder.py
+
+Benefits of the funcs used:
+	The difference vectors from changing position are highest at smallest values of the position.
 #done 
 
