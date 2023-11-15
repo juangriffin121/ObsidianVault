@@ -2,4 +2,7 @@ The attention algorithm is a contiuous (with embedded vectors instead of strings
 In the embedded version of words instead of using absolute matches we use closeness in the embedded vector space meassured by the dot product of their embedded vectors, so to "check for matches" the algorithm performs a dot product between the query vector and the set of key vectors, and since we dont use an absolute match, instead of returning only one value, we generate a probability distribuiton with the softmax function over the key value pairs according to the dot products of the keys with the query and return a linear combination or a weighted average of the values with that distribution.
 When theres more than one query we have a matrix Q as the set of query vectors, the matrix reoresentation of the operation is written below.
 $Attention(Q,K,V) = \frac {Softmax(Q K^{T})}{\sqrt {d_{model}}}V$
+The unscaled algorithm performs poorly on large values of dmodel "We suspect that for large values of
+dk, the dot products grow large in magnitde, pushing the softmax function into regions where it has
+extremely small gradients. To counteract this effect, we scale the dot products by $\frac{1}{\sqrt {d_{k}}}$." (Paper: Attention is all you need)
 #done 
