@@ -22,7 +22,7 @@ C:\Users\Usuario\my_scripts\PositionalEncoder.py
 
 "We chose this function because we hypothesized it would allow the model to easily learn to attend relative positions, since for any fixed offset k, $PE_{pos+k}$  can be represented as a linear function of  $PE_{pos}$."
 $$
-PE_{pos + k} = L(PE_{pos})
+PE_{pos + k} = PE_{pos} W_{pos}
 $$
 #done 
 
