@@ -5,6 +5,7 @@ Steps:
 Positional encoding, after getting the vectors for each word in a sentence we add information about the position of the word in the sentence to those vectors, for that we add the positional encoder vector another 512 dimension vector that contains the information of the position of the word and the network could hopefully pick up when it learns.
 
 the position encoding vector is obtained
+
 $PE(pos)[2i] = sin(\frac {pos}{10000^{\frac{2i}{d_{model}}}})$
 
 $PE(pos)[2i +1 ] = cos(\frac {pos}{10000^{\frac{2i}{d_{model}}}})$
@@ -19,7 +20,9 @@ all position encoder vectors up to 1000 positions:
 code for those images: UPLOAD IT TO GITHUBBBB
 C:\Users\Usuario\my_scripts\PositionalEncoder.py
 
-Benefits of the funcs used:
-	The difference vectors from changing position are highest at smallest values of the position.
+"We chose this function because we hypothesized it would allow the model to easily learn to attend relative positions, since for any fixed offset k, $PE_{pos+k}$  can be represented as a linear function of  $PE_{pos}$."
+$$
+PE_{pos + k} = L(PE_{pos})
+$$
 #done 
 
