@@ -11,4 +11,6 @@ This layer doesnt have any learnt parameters.
 ![[Pasted image 20231106190649.jpg]]
 ![[Pasted image 20231106190737.jpg]]
 The words "move" in the direction of the words related to it.
-If i have apple and banana in a sentence, its vector will move closer to banana(apple = 0.7×apple +0.1×banana +...) and moving in the fruit direction will move it away from the tech brands.
+If i have apple and banana in a sentence, its vector will move closer to banana(new_apple = 0.7×apple +0.1×banana +...) and moving in the fruit direction will move it away from the tech brands.
+new_apple-apple = new_apple - (.7apple +.1apple+...) = (0.7×(banana-apple)+...)
+It moves in the direction of the weighted sum of all the difference vectors between themselves and apple. The difference between banana and apple is probably very similar to the difference between fruits and tech companies.
