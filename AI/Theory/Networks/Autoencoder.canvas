@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"651508ca4d489bf4","type":"text","text":"# Output","x":1680,"y":140,"width":1100,"height":280},
+		{"id":"5db5658b53661062","type":"text","text":"# Encoder","x":335,"y":80,"width":373,"height":400},
+		{"id":"cb7555cb5a0116c6","type":"text","text":"# Latent vector","x":823,"y":255,"width":267,"height":50},
+		{"id":"4bc2bcc157cef6fd","type":"text","text":"# Decoder","x":1205,"y":80,"width":360,"height":400},
+		{"id":"3c8f38923247ce16","type":"text","text":"# Input","x":-880,"y":140,"width":1100,"height":280},
+		{"id":"aa5276cb1c9a33c3","x":832,"y":880,"width":250,"height":60,"color":"1","type":"text","text":"# Difference"},
+		{"id":"0cf4dc071fc4af44","x":709,"y":-960,"width":497,"height":760,"type":"file","file":"AI/Theory/Networks/Autoencoders.md"}
+	],
+	"edges":[
+		{"id":"5c80f3d0e315300f","fromNode":"3c8f38923247ce16","fromSide":"right","toNode":"5db5658b53661062","toSide":"left"},
+		{"id":"4a3a15cca676a917","fromNode":"5db5658b53661062","fromSide":"right","toNode":"cb7555cb5a0116c6","toSide":"left"},
+		{"id":"2b09ed82157cd25b","fromNode":"cb7555cb5a0116c6","fromSide":"right","toNode":"4bc2bcc157cef6fd","toSide":"left"},
+		{"id":"7fcc31d1d5e93f0b","fromNode":"4bc2bcc157cef6fd","fromSide":"right","toNode":"651508ca4d489bf4","toSide":"left"},
+		{"id":"c985f5502baecd94","fromNode":"651508ca4d489bf4","fromSide":"bottom","toNode":"aa5276cb1c9a33c3","toSide":"right"},
+		{"id":"6a6da7b755defac9","fromNode":"3c8f38923247ce16","fromSide":"bottom","toNode":"aa5276cb1c9a33c3","toSide":"left"}
+	]
+}
