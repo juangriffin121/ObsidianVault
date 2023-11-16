@@ -10,3 +10,5 @@ This layer doesnt have any learnt parameters.
 #done 
 ![[Pasted image 20231106190649.jpg]]
 ![[Pasted image 20231106190737.jpg]]
+The words "move" in the direction of the words related to it.
+If i have apple and banana in a sentence, its vector will move closer to banana(apple = 0.7×apple +0.1×banana +...) and moving in the fruit direction will move it away from the tech brands.
