@@ -1,7 +1,7 @@
 Turning words into 512(d_model) dimension vectors
 Steps:
 	one hot encoding of the word
-	learnt embedding (neural net from OneHot vector to embedding vector) [[Embedding]] of the words like word2vec that keeps meaning, (king - man + woman = queen)
+	learnt embedding (neural net from OneHot vector to embedding vector) [[Embedding]] of the words like word2vec that keeps meaning, (king - man + woman = queen) ([[Word embeddings]])
 Positional encoding, after getting the vectors for each word in a sentence we add information about the position of the word in the sentence to those vectors, for that we add the positional encoder vector another 512 dimension vector that contains the information of the position of the word and the network could hopefully pick up when it learns.
 
 the position encoding vector is obtained

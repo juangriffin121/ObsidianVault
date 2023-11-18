@@ -1,0 +1,1 @@
+A vector space that's obtained from [[Embedding]] of high dimensional data, a lot of times this spaces have meaningful notions of distance and vector operations (see [[Word embeddings]]) and their principal components contain meaningful and important information of the varying features of the data. 

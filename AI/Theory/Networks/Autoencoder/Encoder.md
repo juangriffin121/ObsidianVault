@@ -1,0 +1,1 @@
+A [[Neural Networks]] that compresses information from high dimensional data to a lower dimensional vector in [[Latent space]]. usually followed by a [[Decoder]] (see [[Autoencoders]]). This process of creating a low dimensional space is a type of [[Embedding]]. 

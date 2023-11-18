@@ -1,0 +1,1 @@
+A [[Neural Networks]] that recovers high dimensional data from a lower dimensional vector in [[Latent space]]. usually preceded by an [[Encoder]] (see [[Autoencoders]]).

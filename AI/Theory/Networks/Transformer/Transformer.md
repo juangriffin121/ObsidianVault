@@ -1,6 +1,6 @@
 [[Embedding + Positional Encoding]]
-[[Encoder]]
-[[Decoder]]
+[[Encoder (transformer)]]
+[[Decoder (transformer)]]
 #### FeedForward Network
 The feedforward step is composed of two non biased [[Dense Layer]] with a non linear activation function in between them and the output of it is added to its input.
 $$

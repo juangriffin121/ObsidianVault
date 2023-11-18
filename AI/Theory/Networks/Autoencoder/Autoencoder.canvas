@@ -6,7 +6,7 @@
 		{"id":"4bc2bcc157cef6fd","type":"text","text":"# Decoder","x":1205,"y":80,"width":360,"height":400},
 		{"id":"3c8f38923247ce16","type":"text","text":"# Input","x":-880,"y":140,"width":1100,"height":280},
 		{"id":"aa5276cb1c9a33c3","x":832,"y":880,"width":250,"height":60,"color":"1","type":"text","text":"# Difference"},
-		{"id":"0cf4dc071fc4af44","x":709,"y":-960,"width":497,"height":760,"type":"file","file":"AI/Theory/Networks/Autoencoders.md"}
+		{"id":"0cf4dc071fc4af44","x":709,"y":-960,"width":497,"height":760,"type":"file","file":"AI/Theory/Networks/Autoencoder/Autoencoders.md"}
 	],
 	"edges":[
 		{"id":"5c80f3d0e315300f","fromNode":"3c8f38923247ce16","fromSide":"right","toNode":"5db5658b53661062","toSide":"left"},
