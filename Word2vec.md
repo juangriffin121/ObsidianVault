@@ -65,5 +65,3 @@ prediction of probability of word i appearing given word j using their embedded 
 $$
 \hat p(i|j) = \frac {\exp(\vec{U}_i \cdot \vec{V}_j)}{\sum \limits _{k = 0}^{vocab} \exp(\vec{U}_k \cdot \vec{V}_j)}
 $$
-Actual probability given the corpus distribution:
-j@t means word j is at position t in the corpus.
