@@ -5,4 +5,3 @@ $Attention(Q,K,V) = \frac {Softmax(Q K^{T})}{\sqrt {d_{model}}}V$
 The unscaled algorithm performs poorly on large values of dmodel "We suspect that for large values of
 dk, the dot products grow large in magnitde, pushing the softmax function into regions where it has
 extremely small gradients. To counteract this effect, we scale the dot products by $\frac{1}{\sqrt {d_{k}}}$." (Paper: Attention is all you need)
-#done 

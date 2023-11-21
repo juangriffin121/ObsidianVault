@@ -11,3 +11,4 @@ class MyEstimator(BaseEstimator):
 		self.params_ = params
 		return self
 ```
+You can check whether your custom estimator respects Scikit-Learn’s API by passing an instance to check_estimator() from the sklearn.utils.estimator_checks package

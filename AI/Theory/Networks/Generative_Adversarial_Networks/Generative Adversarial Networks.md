@@ -6,5 +6,5 @@ The algorithm works by coupling the generator with another network, the [[Discri
 For the [[Gradient Descent]] of the discriminator the gradient of the loss with respect to the output Z (probability of real) ($\frac {\partial E}{\partial Z}$) is directly used to calculate the gradient of the parameters ($\frac {\partial E} {\partial \Theta_D}$ )and it can be used to calculate the gradient of the gradient of the loss with respect to the discriminators input Y ($\frac {\partial E} {\partial Y}$) which, in the case of the generated images, is the output of the generator, since the loss function for the generator is the opposite of the discriminator's, the gradient with respect to the output of the generator which is then used to perform gradient decent on it is the negative of ($\frac {\partial E} {\partial Y}$).
 
 Its interesting to note that we have two networks that are linked together and that the output of one is the input of the other, and the gradient is fed backwards, here the full network can work as a single layer having its parameters, forward and backwards methods. This is an instance of the [[Composite pattern]].
-#done 
+
 ![[Generative Adversarial Network.canvas|Generative Adversarial Network]]

@@ -7,7 +7,7 @@ this matrix is then passed through the softmax function which ensures that each 
 $A_{cat} = \sum \limits _{word}^{len(seq)}(R_{cat,word}V_{word})$
 $A = \frac {Softmax(Q K^{T})}{\sqrt {d_{model}}}V$
 This layer doesnt have any learnt parameters.
-#done 
+
 ![[Pasted image 20231106190649.jpg]]
 ![[Pasted image 20231106190737.jpg]]
 The words "move" in the direction of the words related to it.

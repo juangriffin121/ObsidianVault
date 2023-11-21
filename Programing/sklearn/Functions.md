@@ -35,3 +35,6 @@ StandardScaler:
 from sklearn.preprocessing import StandardScaler 
 std_scaler = StandardScaler() housing_num_std_scaled = std_scaler.fit_transform(housing_num)
 ```
+
+MyTransformer.get_feature_names_out:
+returns the names after the transformation

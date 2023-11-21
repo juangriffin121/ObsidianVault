@@ -40,5 +40,3 @@ PE_{pos} = PE_0 W_1^{pos}
 $$
 $PE_0$ is 0 for even components and one for odd ones, the matrix W1 is learnable
 
-#done 
-

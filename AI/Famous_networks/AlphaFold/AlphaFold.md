@@ -9,6 +9,6 @@ The algorithm consists of three parts:
 	[[Structure Block]]
 		Receives the output of the evoformer and uses it to construct the final 3D representation
 During the training stage the algorithm performs [[Gradient Descent]] to optimize its parameters.
-#done
+
 ![[AlphaFold.canvas]]
 
