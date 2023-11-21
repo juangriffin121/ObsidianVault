@@ -1,0 +1,2 @@
+[[Composite pattern]]
+[[Strategy pattern]]

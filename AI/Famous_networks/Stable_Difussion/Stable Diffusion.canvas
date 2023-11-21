@@ -1,1 +1,6 @@
-{}
+{
+	"nodes":[
+		{"id":"2e42af497f36080b","x":0,"y":0,"width":400,"height":400,"type":"file","file":"AI/Famous_networks/Stable_Difussion/Stable Diffusion.md"}
+	],
+	"edges":[]
+}
