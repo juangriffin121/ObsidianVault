@@ -1,5 +1,5 @@
 [[Estimator]]
-[[Transformer]]
+[[Transformer(sklearn)]]
 [[Predictors]]
 FunctionTransformer:
 ```python
@@ -53,7 +53,7 @@ preprocessing = ColumnTransformer([
 								   ])
 ```
 
-Example used in titanic:
+Example used in [[Titanic kaggle]]:
 ```python
 FillAge = make_pipeline(
     ColumnTransformer(
