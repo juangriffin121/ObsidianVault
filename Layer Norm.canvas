@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"71d896b633c41b66","type":"file","file":"AI/Theory/Basics/Layers/Layer Norm.md","x":-138,"y":-118,"width":400,"height":400},
+		{"id":"9363b661518064a2","type":"text","text":"# Input X","x":-420,"y":380,"width":180,"height":560,"color":"3"},
+		{"id":"4cae0e14a87629b3","type":"text","text":"# Mean $\\mu$","x":-79,"y":380,"width":141,"height":140},
+		{"id":"a3a545ef84100c9b","type":"text","text":"# Std Dev $\\sigma$","x":-79,"y":800,"width":141,"height":140},
+		{"id":"4fd3d39f34f8420b","type":"text","text":"# -","x":120,"y":425,"width":50,"height":50},
+		{"id":"6332ec490df0b10c","type":"text","text":"# /","x":120,"y":845,"width":50,"height":50},
+		{"id":"11ffcc2a91f951b6","type":"text","text":"# X'","x":262,"y":380,"width":178,"height":560},
+		{"id":"712246853727a0a0","type":"text","text":"# Linear $\\gamma X' + \\beta$\n($\\gamma,\\beta \\in \\mathbb{R}$)","x":480,"y":590,"width":141,"height":140,"color":"6"},
+		{"id":"90a0a731fa40816c","type":"text","text":"# Output Y","x":700,"y":380,"width":180,"height":560,"color":"5"}
+	],
+	"edges":[
+		{"id":"1b1f74ec0bb5929b","fromNode":"9363b661518064a2","fromSide":"right","toNode":"4cae0e14a87629b3","toSide":"left"},
+		{"id":"217cbb37c7fa8b2a","fromNode":"9363b661518064a2","fromSide":"right","toNode":"a3a545ef84100c9b","toSide":"left"},
+		{"id":"412b9676ffeb5d82","fromNode":"4cae0e14a87629b3","fromSide":"right","toNode":"4fd3d39f34f8420b","toSide":"left"},
+		{"id":"d71dbf0e5621b203","fromNode":"a3a545ef84100c9b","fromSide":"right","toNode":"6332ec490df0b10c","toSide":"left"},
+		{"id":"54a7b9e0d301e746","fromNode":"9363b661518064a2","fromSide":"right","toNode":"11ffcc2a91f951b6","toSide":"left"},
+		{"id":"0c4b45d5728883df","fromNode":"4fd3d39f34f8420b","fromSide":"right","toNode":"11ffcc2a91f951b6","toSide":"left"},
+		{"id":"ce2b81c540d5d19f","fromNode":"6332ec490df0b10c","fromSide":"right","toNode":"11ffcc2a91f951b6","toSide":"left"},
+		{"id":"8226120d9a6875db","fromNode":"11ffcc2a91f951b6","fromSide":"right","toNode":"712246853727a0a0","toSide":"left"},
+		{"id":"884c8fac30dd042e","fromNode":"712246853727a0a0","fromSide":"right","toNode":"90a0a731fa40816c","toSide":"left"}
+	]
+}
