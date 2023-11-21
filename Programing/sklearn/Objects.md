@@ -1,3 +1,6 @@
+[[Estimator]]
+[[Transformer]]
+[[Predictors]]
 FunctionTransformer:
 ```python
 from sklearn.preprocessing import FunctionTransformer
@@ -30,3 +33,61 @@ class MyTransformer(BaseEstimator, TransformerMixin):
 
 Pipelines:
 [[Pipeline]]
+ColumnTransformer:
+A single transformer capable of handling all columns, applying the appropriate transformations to each column.  For example, the following ColumnTransformer will apply num_pipeline to the numerical attributes and cat_pipeline to the categorical attribute:
+```python
+from sklearn.compose import ColumnTransformer
+num_attribs = ["longitude", "latitude", "housing_median_age", "total_rooms", "total_bedrooms", "population", "households", "median_income"] 
+num_pipeline = Pipeline([
+						 ("impute", SimpleImputer(strategy="median")), 
+						 ("standardize", StandardScaler()), 
+						 ])
+cat_attribs = ["ocean_proximity"] 
+cat_pipeline = make_pipeline(
+							 SimpleImputer(strategy="most_frequent"),
+							 OneHotEncoder(handle_unknown="ignore")
+							 )
+preprocessing = ColumnTransformer([
+								   ("num", num_pipeline, num_attribs),
+								   ("cat", cat_pipeline, cat_attribs), 
+								   ])
+```
+
+Example used in titanic:
+```python
+FillAge = make_pipeline(
+    ColumnTransformer(
+    #calculate the honorifics from the name column and leave the rest(age) as is
+        [
+            ("get_honorifics",Honorifics(),["Name"]),
+            ("pass","passthrough",["Age"]), #leave the age column as is, if not added it drops it
+        ],
+        verbose_feature_names_out = False,
+    ).set_output(transform = "pandas"),
+    #calculate the missing ages from the means of each honorifics with GroupImputer
+    GroupImputer(gcol_name = "honorific"),
+    ColumnTransformer(
+        [
+            ("encode_honorifics",OneHotEncoder(),["honorific"]),
+            ("pass","passthrough",["Age"]),
+        ],
+        verbose_feature_names_out = False,
+    )
+)
+
+preprocess = ColumnTransformer(
+    [
+        ("FillAge",FillAge, ["Name","Age"],),
+        ("Fare", Quantiles(), ["Fare"]),
+        ("OneHotEncoding", OneHotEncoder(drop = 'if_binary'), ["Sex","Pclass","Embarked"]),
+        ("pass","passthrough",["SibSp","Parch"])
+    ],
+    verbose_feature_names_out = False,
+    remainder="drop",
+)
+
+full_pipeline = make_pipeline(
+    preprocess,
+    RandomForestClassifier(max_depth = 5)
+)
+```
