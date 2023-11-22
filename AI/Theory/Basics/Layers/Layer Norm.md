@@ -34,30 +34,24 @@ class LayerNorm(Capa):
 	def __init__(self):
 	    self.gamma = np.random.randn
 	    self.beta = np.random.randn
-	  def forward(self,Input):
+	def forward(self,Input):
 	    mean = np.mean(Input)
 	    std = np.std(Input)
 	    norm = (Input - mean)/std
 	    output = self.gamma*norm + self.beta
 		
 		self.input = Input
-	    self.mean = mean
-	    self.std = std
 	    self.norm = norm
-	    self.output = output
 	    
 	    return output
-	  def backward(self,grad_output,dt):
+	def backward(self,grad_output,dt):
 		Input = self.Input
-	    mean = self.mean
-	    std = self.std
 	    norm = self.norm
-	    output = self.output
-	    N = input.size
+	    N = Input.size
 	    
 	    grad_gamma = grad_output.T@norm
-	    grad_beta = grad_outpu
-	    grad_input = gamma*(np.identity - 1/N(std@std.T) + 1)@grad_output
+	    grad_beta = np.sum(grad_output)
+	    grad_input = gamma*(np.identity(N) - 1/N(norm@norm.T + 1))@grad_output
 	    
 	    self.gamma -= grad_gamma*dt
 	    self.beta -= grad_beta*dt
