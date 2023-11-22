@@ -155,3 +155,4 @@ $$
 \frac{\partial E}{\partial \textbf b} = \frac{\partial E}{\partial \textbf y} 
 $$
 ___
+Implemented in [[Convolutional Layer object]]

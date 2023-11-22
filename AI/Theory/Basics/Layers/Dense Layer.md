@@ -51,3 +51,4 @@ this last object is a 3D array which can be thought of as being the result of mu
 
 $$\frac{\partial l}{\partial W}(\textbf{x},\theta) = I\otimes \vec{x}$$
 ___
+Implemented in [[Dense Layer object]]
