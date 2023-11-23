@@ -65,3 +65,19 @@ prediction of probability of word i appearing given word j using their embedded 
 $$
 \hat p(i|j) = \frac {\exp(\vec{U}_i \cdot \vec{V}_j)}{\sum \limits _{k = 0}^{vocab} \exp(\vec{U}_k \cdot \vec{V}_j)}
 $$
+
+When the algorithm is in this window:
+	"_can be very ==important== for machine learning_"
+It predicts with the center word the probability of finding any word in the vocabulary:
+$$
+\hat p(i|important) = \frac {\exp(\vec{U}_i \cdot \vec{V}_{important})}{\sum \limits _{k = 0}^{vocab} \exp(\vec{U}_k \cdot \vec{V}_{important})}
+$$
+And we compare that distribution with each one hot encoding of the words in the context
+$$
+compare(\hat p(i|important), OHE(cat)) = 
+compare(\hat y,y)
+$$
+the comparison function is the [[KL divergence]] which in this case it simplifies to
+$$
+-\sum y_i log(\hat y_i) =  
+$$
