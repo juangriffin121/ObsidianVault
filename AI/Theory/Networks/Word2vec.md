@@ -75,9 +75,13 @@ $$
 And we compare that distribution with each one hot encoding of the words in the context
 $$
 compare(\hat p(i|important), OHE(cat)) = 
-compare(\hat y,y)
+compare(\hat y_i,y)
 $$
-the comparison function is the [[KL divergence]] which in this case it simplifies to
+the comparison function is the [[Cross Entropy]] 
 $$
--\sum y_i log(\hat y_i) =  
+-\sum \limits_i^{vocab} y_i log(\hat y_i)  
+$$
+then we compare that for every word in the context, in that case we have 6 different one hot encoding vectors so $y_{ki}$
+$$
+-\sum \limits_{k}^{context}\sum \limits_i^{vocab} y_{ki} log(\hat y_i)  
 $$
