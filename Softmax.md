@@ -19,3 +19,19 @@ $$
 $$
 \frac{\partial y}{\partial x} = y^T(I - y)
 $$
+$$
+\frac {\partial E}{\partial x} = y^T(I - y) \frac {\partial E}{\partial y}
+$$
+When coupled with the [[Cross Entropy]] loss function, a common choice because it compares a predicted probability distribution with the true one, the calculations simplify.
+
+$$
+\frac {\partial E}{\partial \hat y_k} = -\frac {y_k}{\hat y_k}
+$$
+Where $\hat y$ is the predicted probability vector output of the SoftMax and $y$ is the target distribution
+$$
+\frac {\partial E}{\partial x_i} = \sum \limits_k \hat y_k(\delta_i^k - \hat y_i) \frac {\partial E}{\partial \hat y_k} = -\sum \limits_k \hat y_k(\delta_i^k - \hat y_i)\frac {y_k}{\hat y_k} = -\sum \limits_k (\delta_i^k y_k - \hat y_i y_k) = y_i - \sum \limits_k \hat y_i y_k
+$$
+And if $y$ is a [[one hot encoding]] vector the equation simplifies further to:
+$$
+\frac {\partial E}{\partial x_i} =  y_i - \hat y_i
+$$
