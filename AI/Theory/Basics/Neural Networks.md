@@ -9,7 +9,7 @@ The trained neural network as a black box works like this:
 
 $Y = N(X,\Theta) = N_\Theta(X)$
 
-It comes from a function of an imput and parameters that when fitted to the data it best predicts the real output from the input. It takes an input X which has to be an n dimensional array of numerical values (for non numerical data there are ways of converting it into numerical form), and it has a set $\Theta$ of fitted optimizable numerical parameters which define the prediction of the network to any posible input, and it returns another array Y as an output.
+It comes from a function of an input and parameters that when fitted to the data it best predicts the real output from the input. It takes an input X which has to be an n dimensional array of numerical values (for non numerical data there are ways of converting it into numerical form), and it has a set $\Theta$ of fitted optimizable numerical parameters which define the prediction of the network to any possible input, and it returns another array Y as an output.
 
 N in this case is a known function whos output from a certain input is determined by the parameters, and with enough complexity and optimized parameters they can fit any functional form between the data
 
