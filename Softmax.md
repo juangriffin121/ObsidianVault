@@ -4,7 +4,6 @@ y = softmax(x): y_i = \frac{e^{x_i}}{\sum \limits_{j}e^{xj}}
 $$
 #### gradients:
 $$
-\frac {\partial}{\partial} 
 \frac {\partial E}{\partial x_i} = \frac {\partial E}{\partial y_k}\frac {\partial y_k}{\partial xi}  
 $$
 
