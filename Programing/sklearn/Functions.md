@@ -54,3 +54,13 @@ forest_reg = make_pipeline(preprocessing,
 forest_rmses = -cross_val_score(forest_reg, housing, housing_labels,
 								scoring="neg_root_mean_squared_error", cv=10)
 ```
+
+SGDRegressor
+To perform linear regression using stochastic GD with Scikit-Learn, you can use the SGDRegressor class, which defaults to optimizing the MSE cost function. The following code runs for maximum 1,000 epochs (max_iter) or until the loss drops by less than 10 (tol) during 100 epochs –5 (n_iter_no_change). It starts with a learning rate of 0.01 (eta0), using the default learning schedule (different from the one we used).
+```python
+from sklearn.linear_model import SGDRegressor
+sgd_reg = SGDRegressor(max_iter=1000, tol=1e-5, penalty=None, eta0=0.01,
+					   n_iter_no_change=100, random_state=42)
+sgd_reg.fit(X, y.ravel()) # y.ravel() because fit() expects 1D targets
+
+```

@@ -10,4 +10,6 @@ $grad: \frac {\partial E} {\partial \Theta} =  \frac {\partial E} {\partial Y} \
 $\Theta  = \Theta - \frac {\partial E} {\partial \Theta} \cdot LearningRate$
 
 The algorithm is usually used in approximators with multiple [[Layers]] such as [[Neural Networks]] which allow the algorithm to have complexity to be able to fit complex data but keep it able to obtain explicit derivatives.
+
+A common procedure in training with stochastic gradient descent is to use a "Learning schedule", a function of the number of iteration that makes the learning rate get smaller as the iterations go on, this is useful for making sure the model gets closer quickly to the minima but as time goes on it converges and slows down.
 ![[Gradient Descent.canvas]]
