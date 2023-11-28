@@ -38,3 +38,19 @@ std_scaler = StandardScaler() housing_num_std_scaled = std_scaler.fit_transform(
 
 MyTransformer.get_feature_names_out:
 returns the names after the transformation
+
+cross_val_score:
+(see [[CrossValidation]])
+
+Takes in a predictor, the input dataset and the labels and performs the training of the predictor on training sets randomly splitted from the dataset, and then tests the trained model on the test subsets. 
+> [!info]
+> Scikit-Learn’s cross-validation features expect a utility function (greater is better) rather than a cost function (lower is better), so the scoring function is actually the opposite of the RMSE. It’s a negative value, so you need to switch the sign of the output to get the RMSE scores.
+```python
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import cross_val_score
+
+forest_reg = make_pipeline(preprocessing,
+						   RandomForestRegressor(random_state=42))
+forest_rmses = -cross_val_score(forest_reg, housing, housing_labels,
+								scoring="neg_root_mean_squared_error", cv=10)
+```
