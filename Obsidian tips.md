@@ -21,5 +21,9 @@ Lists and tick boxes can be nested
 	2. second subpoint
 2. Second point
 
+This is a table
 
-
+| Column 1 | Column 2 |
+| -------- | -------- |
+| C11      | C21      |
+| C12      | C22      |
