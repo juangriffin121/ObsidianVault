@@ -7,4 +7,5 @@ example:
 		$\vec x$: two component vector containing the slope and intercept
 		$\vec b$:  column vector of all the y data 
 		every row of A dotted with $\vec x$ is $mx + c = y$ 
-		The only way this system is determined is with a square matrix which is the same as making a line with two points, or if multiple points exactly fall on the line, which is to say that the linear combination 
+		The only way this system is determined is with a square matrix which is the same as making a line with two points, or if multiple points exactly fall on the line, which is to say that the linear combination that makes the excess row of A exactly makes the element of b.
+		If its not determined the pseudoinverse gives us the solution of least squares.
