@@ -3,7 +3,7 @@ Just like a linear regression model, a logistic regression model computes a weig
 p = ℎ_θ( x) = σ (θ ⊺ x)
 σ (t) = 1/( 1 + exp (− t))
 
-aprox to [[Softmax]]
+binary [[Softmax]]
 
 The loss function used is the [[Cross Entropy]] in this case is the log loss
 
