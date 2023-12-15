@@ -36,3 +36,4 @@ $$
 \frac {\partial E}{\partial x_i} =  y_i - \hat y_i
 $$
 This basically boils down to saying the correct output should be closer to 1 and the rest closer to zero, ie you "tell" the network it should modify the weights in the way that makes them change in the direction that minimizes the difference vector between the prediction and the one hot encoding. 
+

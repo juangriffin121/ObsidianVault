@@ -1,0 +1,2 @@
+For multiple class classification, the boundaries of the input space regions that are all classified as one class are called decision boundaries.
+In regression with [[Softmax]] after a simple linear model with [[Cross Entropy]] all the boundaries that separate two regions are lines because the exponential function is always increasing, also there's only one minima of the loss because of the [[Convexity]] of the composite function. 
