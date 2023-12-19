@@ -85,7 +85,7 @@ A linear SVM classifier predicts the class of a new instance x by first computin
 $$w^Tx + b = y$$
 How about training? This requires finding the weights vector w and the bias term b that make the street, or margin, as wide as possible while limiting the number of margin violations. Let’s start with the width of the street: to make it larger, we need to make w smaller.
 
-The bigger the vector your dotting x with, the smaller x needs to be to superate the threshold.
+The bigger the vector your dotting x with, the smaller x needs to be to pass the threshold.
 #### Hard margin
 $$argmin_{w,b} (w^Tw) $$
 constrained by:
