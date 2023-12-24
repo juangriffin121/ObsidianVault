@@ -2,6 +2,8 @@
 from sklearn.svm import SVC
 svm_clf = SVC(random_state=42) 
 svm_clf.fit(X_train[:2000], y_train[:2000])
+
+svm_clf.decision_function(instance) #distance to the boundary  
 ```
 For [[Multiclass]] classification problems you can use the SVM from sklearn and sklearn detects when you try to use a binary classifier for multiclass and chooses OvA or OvO accordingly.
 
@@ -89,10 +91,12 @@ The bigger the vector your dotting x with, the smaller x needs to be to pass the
 #### Hard margin
 $$argmin_{w,b} (w^Tw) $$
 constrained by:
-$$y_{true}^i(w^Tx^i+b) >= 1$$ for i in range(len(instances))
+$$y_{true}^i(w^Tx^i+b) >= 1$$
+for i in range(len(instances))
+Where ytrue_i is the category of the ith instance, its either -1 or 1
 
 #### Soft margin
-To get the soft margin objective, we need to introduce a slack variable ζ (i) ≥ 0 for each instance:3 ζ (i) measures how much the i th instance is allowed to violate the margin. We now have two conflicting objectives: make the slack variables as small as possible to reduce the margin violations, and make ½ w⊺ w as small as possible to increase the margin. This is where the C hyperparameter comes in: it allows us to define the trade-off between these two objectives. This gives us the constrained optimization problem
+To get the soft margin objective, we need to introduce a slack variable ζ (i) ≥ 0 for each instance: ζ (i) measures how much the i th instance is allowed to violate the margin. We now have two conflicting objectives: make the slack variables as small as possible to reduce the margin violations, and make ½ w⊺ w as small as possible to increase the margin. This is where the C hyperparameter comes in: it allows us to define the trade-off between these two objectives. This gives us the constrained optimization problem
 $$argmin_{w,b} (\frac12w^Tw + C \sum_i \zeta^i) $$
 constrained by:
 $$y_{true}^i(w^Tx^i+b) >= 1 - \zeta^i$$ for i in range(len(instances))
@@ -101,3 +105,53 @@ $$\zeta^i = max(0, 1 - y_{true}^i(w^Tx^i+b))$$
 	And then putting them in the minimizing argument, getting the loss function, the hinge loss, the algorithm can use that or its square for the optimization.
 ### Kernel trick
 
+The dual problem:
+
+make the w vector be a linear combination of the instances with positive components but signed according to category. This relies on the fact that w usually points from one category to the other.
+$$w = \sum_i \alpha_i y_i^{true} \textbf x_i$$
+Then the minimizing w condition turns into 
+$$1/2w \cdot w = (\sum_i \alpha_i y_i^{true} \textbf x_i)\cdot(\sum_j \alpha_j y_j^{true} \textbf x_j) $$
+$$1/2\sum_i \sum_j \alpha_i\alpha_j y_i^{true} y_j^{true} \textbf x_i \cdot \textbf x_j$$
+for some reason they add the sum of the alphas
+$$1/2\sum_i \sum_j \alpha_i\alpha_j y_i^{true} y_j^{true} \textbf x_i \cdot \textbf x_j + \sum_k \alpha_k$$
+The constraints should become:
+$$y^{true}_i((\sum_j \alpha_j y_j^{true} \textbf x_j)^T\textbf x_i+b) >= 1$$
+$$y^{true}_i(\sum_j \alpha_j y_j^{true} \textbf x_j^T\textbf x_i+b) >= 1$$
+$$y^{true}_i(\sum_j \alpha_j y_j^{true} \textbf x_j \cdot \textbf x_i+b) >= 1$$
+but there's a constraint for positive alphas
+$$\alpha_i>=0$$
+and for some reason there's this one
+$$\sum_j \alpha_j y_j^{true} = 0$$
+
+believing that, we can get that the optimal w vector is easily obtainable with the alpha values:
+$$\hat w = \sum_i \alpha_i y_i^{true} \textbf x_i$$
+the bias term is just the average of the difference between the linear w on x and the outcome, so as to center the decision function
+$$\hat b = 1/m \sum_j^m (y_j - \hat w^T \textbf x_j)$$
+Then the prediction given a new data instance is:
+$$y^{pred}_{new} = w^T \textbf x_{new} + b$$
+$$y^{pred}_{new} = (\sum_i \alpha_i y_i^{true} \textbf x_i)^T \textbf x_{new} + b$$
+$$y^{pred}_{new} = \sum_i \alpha_i y_i^{true} \textbf x_i^T \textbf x_{new} + b$$
+$$y^{pred}_{new} = \sum_i \alpha_i y_i^{true} \textbf x_i \cdot \textbf x_{new} + b$$
+Using the solution to the dual problem, we can see that both the optimization process and the prediction with new instances only depend on the dot products between the inputs and not the vectors themselves.
+
+If we want to take non linearity into account by expanding the features of the dataset to include polynomial terms or something else, we would have $\phi(\textbf x_i)$ instead of $x_i$
+and the dual problem would be formulated in terms of the dot products of this $\phi(\textbf x_i)$ vectors, however, in the case of polynomial features and other expansions we dont really need to calculate those features because the dot product $\phi(\textbf x_i) \cdot \phi(\textbf x_j)$ can be left as a function $K(\textbf x_i,\textbf x_j)$, this is called the kernel and simplifies a lot of those calculations.
+
+so when making the prediction instead of writing:
+$$y^{pred}_{new} = \sum_i \alpha_i y_i^{true} \phi(\textbf x_i) \cdot \phi(\textbf x_{new}) + b$$we write:
+$$y^{pred}_{new} = \sum_i \alpha_i y_i^{true} K(\textbf x_i, \textbf x_{new}) + b$$
+
+same thing in the minimizing condition:
+$$1/2\sum_i \sum_j \alpha_i\alpha_j y_i^{true} y_j^{true} K(\textbf x_i, \textbf x_j) + \sum_k \alpha_k$$
+
+sklearn's SVC predictor is capable of performing the kernel trick while linearSVC and SGDClassifier cant but are faster on linearly separable datasets.
+
+### Other stuff
+
+You can do regression with SVMs by fitting the decision boundary to the main shape of the  data and make the smallest street that contains all/most of the datapoints
+
+common kernels
+Linear: K a, b = a⊺b
+Polynomial: K a, b = (γa⊺b + r)^d
+Gaussian RBF: K a, b = exp (−γ∥ a − b ∥^2)
+Sigmoid: K a, b = tanh(γa⊺b + r)
