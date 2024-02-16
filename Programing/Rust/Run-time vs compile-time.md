@@ -1,0 +1,1 @@
+A compile time error can be seen by the compiler, like modifying an immutable variable, while a run-time error happens after running the executable , like a stdin imputing something not allowed, which is not possible to foresee from the compiler. 

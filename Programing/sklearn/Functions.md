@@ -2,6 +2,11 @@ train_test_split(): random choosing the [[Train and Test sets]] with a seed we c
 ```python
 train_set, test_set = train_test_split(dataset, test_size=0.2, random_state=42)
 ```
+```python
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=69
+)
+```
 StratifiedShuffleSplit(): Used to get many splits representative of the whole dataset by containing roughly equal percentages of datapoints in every bin (strata) created from the splitting column. Returns a splitter object which has a split() method that takes in the dataset and 
 ```python
 splitter = StratifiedShuffleSplit(n_splits=5, test_size=0.2, random_state=69)
