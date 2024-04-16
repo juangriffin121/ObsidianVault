@@ -1,0 +1,126 @@
+# Workspaces
+
+- **name**: "1"
+- **name**: "2"
+- **name**: "3"
+- **name**: "4"
+- **name**: "5"
+- **name**: "6"
+- **name**: "7"
+- **name**: "8"
+- **name**: "9"
+# Binding Modes
+
+- **name**: "resize"
+  - **keybindings**:
+    - **command**: "resize width -2%"
+      - **bindings**: `H`, `Left`
+    - **command**: "resize width +2%"
+      - **bindings**: `L`, `Right`
+    - **command**: "resize height +2%"
+      - **bindings**: `K`, `Up`
+    - **command**: "resize height -2%"
+      - **bindings**: `J`, `Down`
+    - **command**: "binding mode none"
+      - **bindings**: `Escape`, `Enter`
+
+# Keybindings
+
+- **focus left**
+    - **bindings**: `Alt+H`, `Alt+Left`
+- **focus right**
+    - **bindings**: `Alt+L`, `Alt+Right`
+- **focus up**
+    - **bindings**: `Alt+K`, `Alt+Up`
+- **focus down**
+    - **bindings**: `Alt+J`, `Alt+Down`
+    
+- **move left**
+    - **bindings**: `Alt+Shift+H`, `Alt+Shift+Left`
+- **move right**
+    - **bindings**: `Alt+Shift+L`, `Alt+Shift+Right`
+- **move up**
+    - **bindings**: `Alt+Shift+K`, `Alt+Shift+Up`
+- **move down**
+    - **bindings**: `Alt+Shift+J`, `Alt+Shift+Down`
+	
+- **resize width -2%**
+    - **binding**: `Alt+U`
+- **resize width +2%**
+    - **binding**: `Alt+P`
+- **resize height +2%**
+    - **binding**: `Alt+O`
+- **resize height -2%**
+    - **binding**: `Alt+I`
+    
+- **binding mode resize**
+    - **binding**: `Alt+R`
+- **tiling direction toggle**
+    - **binding**: `Alt+V`
+- **focus mode toggle**
+    - **binding**: `Alt+Space`
+- **toggle floating**
+    - **binding**: `Alt+Shift+Space`
+- **toggle maximized**
+    - **binding**: `Alt+X`
+- **set minimized**
+    - **binding**: `Alt+M`
+- **close**
+    - **binding**: `Alt+Shift+Q`
+- **exit wm**
+    - **binding**: `Alt+Shift+E`
+- **reload config**
+    - **binding**: `Alt+Shift+R`
+- **terminal**
+    - **binding**: `Alt+Enter`
+- **focus workspace recent**
+    - **binding**: `Alt+Y`
+- **focus workspace next**
+    - **binding**: `Alt+T`
+- **focus workspace prev**
+    - **binding**: `Alt+Shift+T`
+- **focus workspace 1**
+    - **binding**: `Alt+1`
+- **focus workspace 2**
+    - **binding**: `Alt+2`
+- **focus workspace 3**
+    - **binding**: `Alt+3`
+- **focus workspace 4**
+    - **binding**: `Alt+4`
+- **focus workspace 5**
+    - **binding**: `Alt+5`
+- **focus workspace 6**
+    - **binding**: `Alt+6`
+- **focus workspace 7**
+    - **binding**: `Alt+7`
+- **focus workspace 8**
+    - **binding**: `Alt+8`
+- **focus workspace 9**
+    - **binding**: `Alt+9`
+- **move workspace left**
+    - **binding**: `Alt+A`
+- **move workspace right**
+    - **binding**: `Alt+F`
+- **move workspace up**
+    - **binding**: `Alt+D`
+- **move workspace down**
+    - **binding**: `Alt+S`
+- **move to workspace 1**, **focus workspace 1**
+    - **binding**: `Alt+Shift+1`
+- **move to workspace 2**, **focus workspace 2**
+    - **binding**: `Alt+Shift+2`
+- **move to workspace 3**, **focus workspace 3**
+    - **binding**: `Alt+Shift+3`
+- **move to workspace 4**, **focus workspace 4**
+    - **binding**: `Alt+Shift+4`
+- **move to workspace 5**, **focus workspace 5**
+    - **binding**: `Alt+Shift+5`
+- **move to workspace 6**, **focus workspace 6**
+    - **binding**: `Alt+Shift+6`
+- **move to workspace 7**, **focus workspace 7**
+    - **binding**: `Alt+Shift+7`
+- **move to workspace 8**, **focus workspace 8**
+    - **binding**: `Alt+Shift+8`
+- **move to workspace 9**, **focus workspace 9**
+    - **bindings**: `Alt+Shift+9`
+
