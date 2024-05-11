@@ -1,4 +1,0 @@
-If i want to find local minima of a function $f(\vec x)$ on a subspace of the domain given by all the vectors that satisfy the restriction $g(\vec x) = 0$ ,  we cant use the normal gradient descent algorithm cause moving in the direction of greatest decrease in f can push the position away from the subspace that satisfies the restriction, it turns out that the optimal direction to move is the projection of the gradient of f onto the subspace, to calculate it we substract the component of f in the direction of the gradient of g, ie the direction in which g increases the most, the vector space formed by a base of all the linearly independent vectors perpendicular to $\vec \nabla g$ is tangent to the subspace at the point  and thus moving in that direction wont change the restriction.
-
-$$\frac {\partial \vec x}{\partial t} = \nabla f - \frac{\nabla f \cdot \nabla g}{ ||\nabla g||^2} \nabla g$$
-Proof:
