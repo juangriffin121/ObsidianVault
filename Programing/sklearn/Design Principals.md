@@ -10,4 +10,4 @@ Nonproliferation of classes:
 Composition ([[Composite pattern]]):
 	Existing building blocks are reused as much as possible. For example, it is easy to create a [[Pipeline]] estimator from an arbitrary sequence of transformers followed by a final estimator, as you will see.
 Sensible defaults:
-	Scikit-Learn provides reasonable default values for most parameters, making it easy to quickly create a baseline working system.
+	Scikit-Learn provides reasonable default values for most parameters, making it easy to quickly create a baseline working system
