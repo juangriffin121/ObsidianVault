@@ -1,0 +1,1 @@
+$$ \frac{d^2 \theta}{{dt}^2} = m l a cos(\theta)-m l g sin(\theta)-\mu \frac{d \theta}{dt}+\tau_f \operatorname{sign}(\frac{d \theta}{dt})$$

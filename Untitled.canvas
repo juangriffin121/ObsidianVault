@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"773e54d4872ea9c3","type":"file","file":"Finite Markov Decision Process.md","x":-299,"y":-220,"width":400,"height":140},
+		{"id":"cf93940e10d24e7b","type":"text","text":"# Agent","x":-176,"y":-60,"width":155,"height":60},
+		{"id":"40c537fac72c216a","type":"text","text":"# Enviorment\n$P(s_{n+1},r|s_n, a)$","x":-200,"y":100,"width":220,"height":120},
+		{"id":"8ce1a2bb766800ea","type":"text","text":"#  State","x":-390,"y":100,"width":140,"height":60},
+		{"id":"99feca61ecf13728","type":"text","text":"# Action","x":101,"y":130,"width":160,"height":60},
+		{"id":"bf98489cafdc8cc9","type":"text","text":"# Policy\n$\\pi(a|s_n)$","x":101,"y":-90,"width":160,"height":120},
+		{"id":"60316440776ad100","type":"text","text":"# Reward","x":-431,"y":160,"width":181,"height":60},
+		{"id":"2c02aef92e343e73","x":-422,"y":300,"width":163,"height":84,"type":"text","text":"# Goal\n$Gn =\\sum_k \\gamma^{k-n-1}R_n$ "}
+	],
+	"edges":[
+		{"id":"89d74dcdbebcbb3e","fromNode":"40c537fac72c216a","fromSide":"left","toNode":"8ce1a2bb766800ea","toSide":"right"},
+		{"id":"f25edbd7d5bd82b5","fromNode":"40c537fac72c216a","fromSide":"left","toNode":"60316440776ad100","toSide":"right"},
+		{"id":"8de5fc71e7828fdd","fromNode":"8ce1a2bb766800ea","fromSide":"left","toNode":"cf93940e10d24e7b","toSide":"left"},
+		{"id":"7d3bfe04646af353","fromNode":"60316440776ad100","fromSide":"left","toNode":"cf93940e10d24e7b","toSide":"left"},
+		{"id":"4e6a1f65a0bdd52d","fromNode":"99feca61ecf13728","fromSide":"left","toNode":"40c537fac72c216a","toSide":"right"},
+		{"id":"bf24df543a98314b","fromNode":"cf93940e10d24e7b","fromSide":"right","toNode":"bf98489cafdc8cc9","toSide":"left"},
+		{"id":"8e364f0c0380b027","fromNode":"bf98489cafdc8cc9","fromSide":"bottom","toNode":"99feca61ecf13728","toSide":"top"},
+		{"id":"89cdb3cfc765b565","fromNode":"60316440776ad100","fromSide":"bottom","toNode":"2c02aef92e343e73","toSide":"top"}
+	]
+}
