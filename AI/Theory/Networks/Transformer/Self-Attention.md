@@ -1,4 +1,4 @@
-Allows the model to relate words to each other.
+`Allows the model to relate words to each other.
 This algorithm is based on the [[Attention]] algorithm using the same input matrix as the query key and value matrices.
 With a sentence of seq_len words it can be represented as a matrix S of shape (seq_len,d_model), a sequence of word vectors, we make 3 copies of it Q(query), K(Key) and V(value)
 Q, K, V = S, S, S

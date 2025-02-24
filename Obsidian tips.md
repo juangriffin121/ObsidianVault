@@ -1,3 +1,10 @@
+# asd
+
+## asddd
+
+### dddd
+
+
 
 > [!info]
 > Info boxes
@@ -27,3 +34,7 @@ This is a table
 | -------- | -------- |
 | C11      | C21      |
 | C12      | C22      |
+
+# LaTeX
+
+$\sqrt{1}$

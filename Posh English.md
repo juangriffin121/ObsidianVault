@@ -16,7 +16,6 @@ Synonym
 **Perish**: die
 **Fearsome**: scary
 **Succinct**: clear and concise.
-
 **Whom**: replaces who when the who is the object of a verb he->who him->whom
 [
 	Who wants to go on vacation?

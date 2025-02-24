@@ -1,3 +1,9 @@
+---
+id: Strategy pattern
+aliases: []
+tags: []
+---
+
 Defines a family of algorithms, and makes them interchangeable
 
 ```python

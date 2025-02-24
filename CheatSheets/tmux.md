@@ -1,3 +1,9 @@
+---
+id: Tmux Cheat Sheet
+aliases: []
+tags: []
+---
+
 ### Sessions
 
 - `$ tmux`

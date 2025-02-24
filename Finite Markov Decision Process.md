@@ -8,8 +8,8 @@ of state
 $v_{\pi}(s) = E_{\pi}(G_n|S_n = s)$ 
 if actions and state
 $q_{\pi}(s, a) = E_{\pi}(G_n|S_n = s, A = a)$ 
-expected Gn for the state or the state and action considering in the future the agent followss $\pi$
-$v_{\pi}(s) = \sum \limits_{a \in A} \pi(a, s) E(G_n|S = s)$
+expected Gn for the state or the state and action considering in the future the agent follows $\pi$
+$v_{\pi}(s) = \sum \limits_{a \in A} \pi(a, s) E(G_n|S = s, A = a) =  \sum \limits_{a \in A} \pi(a, s) q_{\pi}(s, a)$
 $G_n = R_{n+1} + \gamma G_{n+1}$
 $E(G_n|S = s) = E(R_{n+1} + \gamma G_{n+1}|S = s)$
 since its the expected this works
