@@ -1,4 +1,11 @@
-$$pinv(A) = (A^TA)^{-1}$$
+---
+id: PseudoInverse
+aliases: []
+tags: []
+---
+
+
+$pinv(A) = (A^TA)^{-1}$
 When i have an overdetermined system of equations:
 $$A \vec x = \vec b$$
 example:

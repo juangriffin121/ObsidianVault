@@ -1,3 +1,9 @@
+---
+id: Posh English
+aliases: []
+tags: []
+---
+
 **Barbigerous**: bearded
 Synonym
 **Harbinger**: something or someone who foreshadows an event generally a bad one
@@ -143,3 +149,6 @@ Synonym
 **Hectic**: full of incessant activity
 **Mischievous**: fondness for causing trouble in a wholesome playful way
 **Remnants**: remains
+**YourMum**: asdasdasd
+**None the wiser**: Not aware of the situation
+**Glaring**: Very evident, can also mean shinning intensly or staring fiersly or fixedly
