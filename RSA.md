@@ -117,3 +117,6 @@ Thus encripting by doing y = x^a (mod pq) and then decripting by y^b (mod pq) wo
 
 In order for alice to prove that she is the one who made the message she can
 Hash the message, and encripts the hash with her private key, she then sends the message encripted with Bob's public key together with this encripted hash(Digital Signature), 
+
+
+read [[RSA2]] for simpler derivation
