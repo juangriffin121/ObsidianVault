@@ -8,6 +8,11 @@ tags: []
 # RSA
 Public-Private key encription algorithm.
 
+We need an operation which is easy in one direction, but hard in another unless yoou have a **trapdoor** in which case its easy
+
+like [[diffie_hellman]] we have modular exponantiation as an operation which is easy in one direction but hard in the other.
+
+
 ## Basic behavior
 Alice wants to send Bob a message that nobody else can read and Bob can know nobody else but Alice can have sent it.
 Alice and bob have both private and public "keys", numbers that can be used to encript and decript messages.
@@ -23,7 +28,7 @@ we want:
 
 
 ### Facts
-- Computing prime factors of large numbers is computationally hard
+- Computing prime factors of large numbers is computationally hard, but making a large number from primes is super easy, just choosing the primes and multiplicate, this creates an **asymmetry of knowledge**
 
 - a^{phi(n)} = 1 mod(n) <=> a and n are coprimes
 
