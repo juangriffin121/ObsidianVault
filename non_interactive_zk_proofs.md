@@ -1,7 +1,8 @@
 ---
 id: non_interactive_zk_proofs
 aliases: []
-tags: []
+tags:
+  - Crypto
 ---
 
 The issue with [[interactive_zk_proofs]] is that they work for a single verifier, every new verifier that wants to checck the truth of the prover has to issue challenges themselves, because even if the interaction between prover and verifier_1 is public, he cant rule out that they are working together.

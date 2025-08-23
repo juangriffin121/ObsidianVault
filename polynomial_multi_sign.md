@@ -2,7 +2,8 @@
 id: polynomial_multi_sign
 aliases:
   - Polynomial signatures
-tags: []
+tags:
+  - Crypto
 ---
 
 A signature is a proof that its me and that that is the message i wrote. It needs to be able to be verified by anyone and it needs to depend on something only i know and the message i wrote, so that no one who isnt me can sign a message with my signature and messages are tied to the signatures so no one can change the message. 

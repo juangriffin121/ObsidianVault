@@ -2,7 +2,9 @@
 id: ratatui
 aliases:
   - Ratatui
-tags: []
+tags:
+  - Programming
+  - Rust
 ---
 
 # Ratatui

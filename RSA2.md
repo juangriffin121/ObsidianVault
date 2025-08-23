@@ -1,7 +1,8 @@
 ---
 id: RSA2
 aliases: []
-tags: []
+tags:
+  - Crypto
 ---
 
 y = E(x, e, ) e is secret

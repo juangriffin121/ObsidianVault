@@ -1,3 +1,11 @@
+---
+aliases:
+id:
+tags:
+  - Programming
+  - Rust
+---
+
 A module can be a file alongside the main or lib.rs file, or inside folders
 ```
 my_project/

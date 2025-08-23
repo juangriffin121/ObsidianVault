@@ -1,7 +1,8 @@
 ---
 id: diffie_hellman
 aliases: []
-tags: []
+tags:
+  - Crypto
 ---
 
 Alice and Bob want to create a shared private key for [symmetric cryptography], to talk via encrypted messages only the two of them can decrypt.

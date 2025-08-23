@@ -1,7 +1,8 @@
 ---
 id: ManInTheMiddle
 aliases: []
-tags: []
+tags:
+  - Crypto
 ---
 
 A weakness in [[diffie_hellman]] 

@@ -1,3 +1,10 @@
+---
+id: Markov Stuff
+aliases: []
+tags:
+  - BasicMaths
+---
+
 
 ### Markov chain
 next state's probability distribution depends only on current state.

@@ -2,7 +2,8 @@
 id: RSA
 aliases:
   - RSA
-tags: []
+tags:
+  - Crypto
 ---
 
 # RSA
