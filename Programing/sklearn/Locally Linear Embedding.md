@@ -1,7 +1,7 @@
 #### First step
 
 $$W = argmin((\sum_{i = 1}^{m} \vec x_i - \sum_{j = 1}^{k} w_{ij}\vec x_j)^2)$$
-The instance vector x_i is aproximated as a weighted average of its k nearest neighbors, the weights are learned that minimizes the error.
+The instance vector x_i is aproximated as a weighted average of its [[k nearest neighbors]] the weights are learned that minimizes the error.
 
 the $w_{ij}\vec x_j$ is not a matrix multiplication.
 
@@ -21,7 +21,7 @@ where $m_{ij} = 1$ if j is one of the knn of i, and zero otherwise
 
 since we have the constraint of $\sum \limits_j m_{ij} w_{ij} = 1$
 
-Gradient descent with constraints:
+[[Gradient descent with constraints]]:
 $$\frac {\partial \vec x}{\partial t} = \frac {\partial f}{\partial \vec x} - \frac{\frac {\partial f}{\partial \vec x} \cdot \frac {\partial g}{\partial \vec x}}{ ||\frac {\partial g}{\partial \vec x}||^2} \frac {\partial g}{\partial \vec x}$$
 Thus, our change in w should be:
 
