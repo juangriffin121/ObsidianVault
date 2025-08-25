@@ -1,6 +1,6 @@
 # $\vec{\nabla}\downarrow$
 
-Gradient descent is a parameter optimization algorithm for function approximation, it works by defining a [[loss function]] that compares the correct output to the prediction of the aproximator based on the input given, in some cases the algorithm uses all the dataset in one iteration, in others it uses only one or a small batch data entry per iteration ([[Stochastic gradient descent]]).
+Gradient descent is a parameter optimization algorithm for function approximation for [[Machine Learning]], it works by defining a [[loss function]] that compares the correct output to the prediction of the aproximator based on the input given, in some cases the algorithm uses all the dataset in one iteration, in others it uses only one or a small batch data entry per iteration ([[Stochastic gradient descent]]).
 With the data used for the iteration it calculates the [[Gradient]] of the loss function with respect to the aproximator's parameters and uses that gradient to move in the opposite direction (changing all the parameters in the most optimal way supposing linearity of the loss), the direction of steepest decrease.
 In order to be able to perform this algorithm the loss function must be differentiable (and with an explicit formula) with respect to the aproximator's output, and so should the aproximators output be with respect to the parameters.
 $\textbf Y_{true} = F(\textbf X) + \epsilon$

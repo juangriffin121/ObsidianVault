@@ -1,5 +1,6 @@
 
 Neural networks are universal function approximators, for any kind of prediction problem where the data follows a very complex but not random functional correspondence between input and output, neural networks are a useful tool. 
+Neural nets are widespread among modern [[Machine Learning]].
 
 When we have a dataset with entries of the form $(X,Y_{true})$
 

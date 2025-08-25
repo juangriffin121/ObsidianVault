@@ -5,7 +5,7 @@ tags:
   - Programming
   - Rust
 ---
-
+[[rust]] module system
 A module can be a file alongside the main or lib.rs file, or inside folders
 ```
 my_project/

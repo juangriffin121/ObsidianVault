@@ -1,3 +1,4 @@
+For [[Multiclass]] classifiers
 Classification:
 	Binary:
 		True Positives(TP):

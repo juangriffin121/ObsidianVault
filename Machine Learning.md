@@ -1,0 +1,1 @@
+A machine learning algorithim is an algorithm that depends on a set of parameters that are optimized with respect to a particular objective function or [[loss function]].
