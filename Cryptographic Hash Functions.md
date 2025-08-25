@@ -1,3 +1,8 @@
+---
+tags:
+  - Crypto
+---
+
 A [[Hash Function]] particularly suited for [[Cryptography]] protocols.
 The criterion for this kind of functions are:
 Given y = H(x)

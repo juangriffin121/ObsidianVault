@@ -1,20 +1,21 @@
 ---
 id: interactive_zk_proofs
 aliases: []
-tags: []
+tags:
+  - Crypto
 ---
 
-Also known as Interactive Schnorr proof
-
+Also known as Interactive Schnorr proof(see [[Schnorr_sig]])
 - I want to prove to you that i know a value x in Zq such that g^x = X in cycle group over Zq
 - I dont want to make x public
-- Since log_g(X) isnt feasible i can only know an x to the public X if i created X as g^x 
+- Since log_g(X) isnt feasible (see [[Discrete Log Problem]] and [[One way functions]]) i can only know an x to the public X if i created X as g^x 
 
 how do you know i know x and i didnt pick a random X?
 i need to bind x to things in a way that someone can verify the binding without needing x itself
 g^() provides useful properties in that regard too, g^(a+b) = g^a g^b and g^(ab) = (g^a)^b
+(Usually this involves [[EllipticCurveCrypto]] rather than [[Finite Fields]] exponentiation)
 
-random values also help
+To avoid revealing x we use random numbers to mask it:
 lets say i pick r from Zq, i can publish R = g^r and i can do arithmetic operations on x and r that can be verified by checking the relations in the g^() world
 ie:
 z = r + x -> g^z = g^r g^x = R X
@@ -33,3 +34,4 @@ then the verifier could ask for the challenge c = 1 then z = 1 * x and the prove
 
 thus z = r + c * x gives the verifier certainty of the prover's knowledge of x without sacrificing the secrecy of x.
 
+A similar protocol is used in [[non_interactive_zk_proofs]] and taking an interactive protocol and making it a non interactive protocol is called a [[Fiat-Shamir transform]]

@@ -21,7 +21,7 @@ c was needed because without it z = r + x, the prover could do R = g^z / X and t
 
 z = r + c(R) x 
 notice how c depends directly on R, which is tied to r so there's a dependance on r which makes picking r a challenge, and since it depends on the public R its verifiable.
-to avoid mathematical trickery which could leave way to ways of picking r, c(R) should be an unpredictable and uninvertable function, exactly what hashes are made to be.
+to avoid mathematical trickery which could leave way to ways of picking r, c(R) should be an unpredictable and uninvertable function, exactly what [[Cryptographic Hash Functions]] are made to be.
 
 so c = H(R)
 in general the heuristic is c = H(context)
@@ -42,6 +42,6 @@ What goes into the hash (the “context”)
         g, group order 
         q, domain identifiers.
 - Optional / good practice
-    - Message being signed: if the proof is used as a signature (e.g. Schnorr signature), include the actual message m. This binds the proof to that message.
+    - Message being signed: if the proof is used as a signature (e.g. [[Schnorr_sig]]), include the actual message m. This binds the proof to that message.
     - Protocol / domain tag: a string like "SchnorrZKProof-v1" to prevent cross-protocol reuse of the same hash challenge.
     - Participant identifiers: if many parties are involved, their IDs, keys, etc., to avoid replay attacks.

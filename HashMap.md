@@ -7,7 +7,7 @@ tags: []
 
 # HashMap
 
-The HashMap is a key-value pair data structure that uses a [[Hash Function]] to relate the key data to the address of the value in memory. examples of it are [[rust]] HashMap and python's dictionary.
+The HashMap is a key-value pair data structure that uses a [[Hash Function]] to relate the key data to the address of the value in memory. examples of it are [[rust]] HashMap and [[python]]'s dictionary.
 
 ## Under The Hood
 Internally to locate the value, you hash the key and perform one of this operations (depending on the programing language):

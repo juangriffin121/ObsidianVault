@@ -1,3 +1,8 @@
+---
+tags:
+  - BasicMaths
+---
+
 A group is a set of mathematical objects together with an operation between two elements that is closed (a○b in G if a in G and b in G)
 The operation should have this properties:
 - asociativity: (a ○ b) ○ c = a ○ (b ○ c)
