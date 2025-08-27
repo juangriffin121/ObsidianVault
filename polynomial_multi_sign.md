@@ -15,7 +15,7 @@ if everyone knows a point, theres only one polynomial that goes through them all
 Issues with protocol as it stands:
 - signers should make their points public
 - trusted third party holding the public key.
-
+	
 ## FROST
 
 - each participant creates their own polynomial of t - 1 degree from t random values from Zq f_i(x) = \sum_j a_{ij} x^j
