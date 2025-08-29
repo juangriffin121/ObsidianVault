@@ -11,6 +11,10 @@ Yazi is an efficient, user-friendly and customizable fast terminal file manager 
 
 The following are the default keyboard shortcuts from `keymap.toml`.
 
+## Worth remembering
+
+uppercase O on a file is open with, the option Reveal on it opens the normal file manager
+
 ## File Operations
 
 | Task | Shortcut(s) | Notes |
