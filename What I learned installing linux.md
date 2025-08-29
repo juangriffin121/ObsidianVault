@@ -26,7 +26,7 @@ download the iso and check the hash:
 ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f *linuxmint-22.1-cinnamon-64bit.iso
 d286306d0f40bd7268f08c523ece5fba87c0369a27a72465a19447e3606c5fa0 *linuxmint-22.1-mate-64bit.iso
 6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d *linuxmint-22.1-xfce-64bit.iso
-```
+```bash
 > sha256sum linuxmint-22.1-xfce-64bit.iso
 6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d  linuxmint-22.1-xfce-64bit.iso
 ```
@@ -47,7 +47,7 @@ sudo eject /dev/sdb to safely take it out
 
 go into bios in the new pc, 
 
-Do not fear the kernel with the \[ OK \] stuff or the 48 records in and out, nothing broke down 
+Do not fear the kernel with the `[ OK ]` stuff or the 48 records in and out, nothing broke down 
 
 install linux mint icon, install along side windows great success! :)
 
