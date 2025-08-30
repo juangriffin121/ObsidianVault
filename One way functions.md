@@ -1,3 +1,9 @@
+---
+id: One way functions
+aliases: []
+tags: []
+---
+
 Definition (informal):
 A one-way function is something that’s:
 
@@ -52,7 +58,7 @@ They **preserve algebraic relations**.
 
 Example problems:
 
-Discrete Logarithm Problem (DLP): given g^x mod p, find x.
+[[Discrete Log Problem]] (DLP): given g^x mod p, find x.
 
 [[diffie_hellman]] Problem: given g^a, g^b, compute g^(ab).
 

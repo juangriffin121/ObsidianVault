@@ -32,7 +32,7 @@ What goes into the hash (the “context”)
     - Public statement: the value X=g^x (otherwise the challenge could be reused by other people eg:
         alice made a signature (R, z) where the c to create z doesnt depend on her Xa
         if Mallroy can pick a new key for herself she can pick Xm = (g^z/R)^(1/c)
-        Then Alice’s signature verifies as if Mallory produced it, even though Mallory doesn’t know the discrete log.
+        Then Alice’s signature verifies as if Mallory produced it, even though Mallory doesn’t know the [[Discrete Log Problem]].
         This works because c is the same for both XA and XM, since X isn’t included in the hash.
 
         This is called a rogue key attack 
