@@ -1,0 +1,6 @@
+The stack is a region of the [[Virtual Memory]] of a program, usually at the end of the address space.
+Its meant to be the easily accessible data.
+When a function is called with certain inputs, if they fit those inputs are put at the end of the stack (otherwise a pointer to the [[heap]] is used instead), also before in the stack, the return pointer is initialized, when the function returns, thats where that value will end up.
+Every successive value the function creates is stored on the stack if it fits and when the function finishes, all the values in its stack frame are deleted and thus, the program is back at dealing with the caller's stack frame now, with the return value of the function already found.
+Its a [[stack(data structure)]] because you append data and take it from the end when you are done with it.
+If a function created data which it couldn't store in the stack it isnt deleted generally, but if its never used again it could clog up the program, require more memory and in general be a problem, programming languages deal with this issue in different ways, [[python]] and others use a [[garbage collector]], C and others leave it as an exercise for the reader and [[rust]] deletes everything from the heap that doesn't have a stack pointer to it by making the [[Compiler]] enforce its [[Ownership]] and [[Borrow]] rules.

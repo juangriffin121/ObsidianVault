@@ -9,22 +9,22 @@ A _scalar_ type represents a single value. Rust has four primary scalar types:
 
 ### Integers
 
-| Length | Signed | Unsigned |
-| ---- | ---- | ---- |
-| 8-bit | `i8` | `u8` |
-| 16-bit | `i16` | `u16` |
-| 32-bit | `i32` | `u32` |
-| 64-bit | `i64` | `u64` |
-| 128-bit | `i128` | `u128` |
-| arch | `isize` | `usize` |
+| Length  | Signed  | Unsigned |
+| ------- | ------- | -------- |
+| 8-bit   | `i8`    | `u8`     |
+| 16-bit  | `i16`   | `u16`    |
+| 32-bit  | `i32`   | `u32`    |
+| 64-bit  | `i64`   | `u64`    |
+| 128-bit | `i128`  | `u128`   |
+| arch    | `isize` | `usize`  |
 
-|Number literals|Example|
-|---|---|
-|Decimal|`98_222`|
-|Hex|`0xff`|
-|Octal|`0o77`|
-|Binary|`0b1111_0000`|
-|Byte (`u8` only)|`b'A'`|
+| Number literals  | Example       |
+| ---------------- | ------------- |
+| Decimal          | `98_222`      |
+| Hex              | `0xff`        |
+| Octal            | `0o77`        |
+| Binary           | `0b1111_0000` |
+| Byte (`u8` only) | `b'A'`        |
 ### Floats
 ### Bools
 ### Chars
@@ -53,6 +53,6 @@ or
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 let a = [3; 5]; -> [3, 3, 3, 3, 3]
 ```
-Arrays are useful when you want your data allocated on the [[stack]] rather than the [[heap]] or when you want to ensure you always have a fixed number of elements. An array isn’t as flexible as the vector type, though. A _vector_ is a similar collection type provided by the standard library that _is_ allowed to grow or shrink in size. If you’re unsure whether to use an array or a vector, chances are you should use a vector.
+Arrays are useful when you want your data allocated on the [[stack(memory)]] rather than the [[heap]] or when you want to ensure you always have a fixed number of elements. An array isn’t as flexible as the vector type, though. A _vector_ is a similar collection type provided by the standard library that _is_ allowed to grow or shrink in size. If you’re unsure whether to use an array or a vector, chances are you should use a vector.
 Array elements are accesed like in python, a\[i\]  
 
