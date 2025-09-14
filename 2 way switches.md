@@ -1,4 +1,4 @@
-Normal light switches have two wires the live (L) and the load wire (). The live one carries AC from the source and the load carries it to the lamp when the switch is on, the lamp recieves it and it has a neutral wire, (is it ground?).
+Normal light switches have two wires the live (L) and the load wire (). The live one carries AC from the source and the load carries it to the lamp when the switch is on, the lamp recieves it and it has a neutral wire which bypasses the switch and goes directly to the main's neutral.
 2 way switches allow 2 switches to control one light, this type of switches have 3 wires, a common terminal and L1 and L2, there are multiple ways of connecting them to achieve this, the simplest one is 
 - Switches change which Li is connected to the common terminal
 - Li of one switch is connected with Li of the other
