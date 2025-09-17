@@ -13,3 +13,4 @@ Parallels:
 - Commitment schemes, P needs to hide its solution, V needs to be sure that P's solution to his challenges (the edge) matches the graph's solution P hid.
 - Randomization, aside from obscuring, P needs to make sure his solution cant be reconstructed through multiple challenges.
 - Challenges, V needs to ask multiple questions to be convinced of the proofs.
+- 
