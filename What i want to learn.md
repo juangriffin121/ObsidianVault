@@ -1,0 +1,14 @@
+- [ ] Better bash and gnu core utils
+	- [ ] Pipes, awk, jq, RegExs etc
+	- [ ] Some kernel textbook
+	- [ ] Read more manpages
+	- [ ] Script more things
+- [ ] Java
+	- [ ] Relatively big project
+- [ ] C
+	- [ ] Basic project
+	- [ ] Arduino stuff
+- [ ] More basic electronics and stuff, fix old desktop pc, maybe build homelab from it
+- [ ] Crypto stuff
+	- [ ] Solidity, smart contracts etc
+	- [ ] More zk proofs
