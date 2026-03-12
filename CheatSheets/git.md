@@ -5,6 +5,9 @@ aliases:
 tags: []
 ---
 
+Always use git@github so i can use ssh
+
+
 `git init` 
 `git status`
 `git add file`

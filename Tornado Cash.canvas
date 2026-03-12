@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"06f6da077517cb8f","type":"file","file":"Merkle tree.canvas","x":-329,"y":19,"width":400,"height":321},
+		{"id":"502e22b022c37e70","type":"text","text":"## Deposit\n- N ETH\n- H(Secret, Null)\n- Address","x":-620,"y":380,"width":180,"height":140}
+	],
+	"edges":[
+		{"id":"5341c966f54f54f5","fromNode":"502e22b022c37e70","fromSide":"right","toNode":"06f6da077517cb8f","toSide":"bottom"}
+	]
+}

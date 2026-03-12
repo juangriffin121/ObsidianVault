@@ -1,0 +1,1 @@
+> src/pages is the only required directory, without it no pages, but the rest can be called whatever  

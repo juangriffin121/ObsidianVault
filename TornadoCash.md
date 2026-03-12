@@ -16,7 +16,7 @@ For Tornado Cash Nova, the new ETH pool with arbitrary amounts & shielded transf
 * Doesnt use private key, funds are linked to a wallet address, users access their funds via their addresses, the strenfth of the protocol is linked to the number of users, i dont get how this one works? maybe later... 
 
 ## Contribution of zk-SNARK & hashing process
-TC uses [[zk-SNARKs]] to verify and allow transactions.
+TC uses [[zk-SNARKs]] to verify and allow withdrawals.
 
 > Let D = (dp, dv ) be the ZK-SNARK [Gro16] proving-verifying key pair for S created using some
 trusted setup procedure. Let Prove(dp, T , k, r, l, A, f, t) → P be the proof constructor using dp and
@@ -24,7 +24,7 @@ Verify(dv , P, R, h, A, f, t) be the proof verifier.
 
 T is merkel tree
 l is leaf (position in the tree)
-A is address
+A is withdrawal address
 f is fee
 t is the relayer address which gets the fee (middle man)
 R is the value of the merkel root used 
