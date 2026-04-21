@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"4599bc7f1f35cf9f","type":"text","text":"# Smallest strategy","x":-960,"y":-110,"width":250,"height":60},
+		{"id":"c74087b85f54fe3b","type":"text","text":"# Agent strategy","x":-960,"y":-30,"width":250,"height":60},
+		{"id":"8b86f44d74c91a30","type":"text","text":"# User strategy","x":-960,"y":50,"width":250,"height":60},
+		{"id":"79b9741249269f00","type":"text","text":"# Strategy","x":-1240,"y":-30,"width":140,"height":60},
+		{"id":"bce196c8f13b8502","type":"text","text":"# Table","x":-1760,"y":-30,"width":140,"height":60},
+		{"id":"a0383c31c0c6ceb8","type":"text","text":"# Agent","x":-640,"y":-30,"width":120,"height":60},
+		{"id":"b0f521a3faf3c089","type":"text","text":"# Card Chooser","x":-420,"y":-90,"width":250,"height":60},
+		{"id":"c2c3868c39493af6","type":"text","text":"# Worst chooser\n","x":-420,"y":30,"width":250,"height":60},
+		{"id":"2adce1a954467e45","type":"text","text":"# Neural network","x":-60,"y":-30,"width":250,"height":60},
+		{"id":"13de959f33b0b75c","x":-1480,"y":-90,"width":140,"height":60,"type":"text","text":"# Deck"},
+		{"id":"c00cbf9fe4e68ed0","type":"text","text":"# Player","x":-1480,"y":30,"width":140,"height":60},
+		{"id":"f5ca226093a5cc21","x":-975,"y":520,"width":140,"height":60,"type":"text","text":"# Runner "},
+		{"id":"b8b40dc9224a1e30","x":-971,"y":620,"width":133,"height":60,"type":"text","text":"# Logger"},
+		{"id":"eff116114fafca43","x":-780,"y":520,"width":138,"height":60,"type":"text","text":"# Scenario"}
+	],
+	"edges":[
+		{"id":"466dc5ef5364097e","fromNode":"2adce1a954467e45","fromSide":"left","toNode":"b0f521a3faf3c089","toSide":"right"},
+		{"id":"5b99fffa10cd9edf","fromNode":"2adce1a954467e45","fromSide":"left","toNode":"c2c3868c39493af6","toSide":"right"},
+		{"id":"c7bf1ac14772d0c9","fromNode":"b0f521a3faf3c089","fromSide":"left","toNode":"a0383c31c0c6ceb8","toSide":"right"},
+		{"id":"3f72a3439926dff6","fromNode":"c2c3868c39493af6","fromSide":"left","toNode":"a0383c31c0c6ceb8","toSide":"right"},
+		{"id":"8249e18d83f445d2","fromNode":"a0383c31c0c6ceb8","fromSide":"left","toNode":"c74087b85f54fe3b","toSide":"right"},
+		{"id":"ba2d5bbae29c2a12","fromNode":"4599bc7f1f35cf9f","fromSide":"left","toNode":"79b9741249269f00","toSide":"right"},
+		{"id":"80ae55cb222eca02","fromNode":"c74087b85f54fe3b","fromSide":"left","toNode":"79b9741249269f00","toSide":"right"},
+		{"id":"312edf3591f71233","fromNode":"8b86f44d74c91a30","fromSide":"left","toNode":"79b9741249269f00","toSide":"right"},
+		{"id":"010eb3dee61c9001","fromNode":"79b9741249269f00","fromSide":"left","toNode":"c00cbf9fe4e68ed0","toSide":"right"},
+		{"id":"a27faa6beef5d8c8","fromNode":"c00cbf9fe4e68ed0","fromSide":"left","toNode":"bce196c8f13b8502","toSide":"right"},
+		{"id":"d201f546ba2b230c","fromNode":"13de959f33b0b75c","fromSide":"left","toNode":"bce196c8f13b8502","toSide":"right"},
+		{"id":"a4e2fdcd783e4e95","fromNode":"bce196c8f13b8502","fromSide":"bottom","toNode":"f5ca226093a5cc21","toSide":"top"},
+		{"id":"a265957dbd107465","fromNode":"c00cbf9fe4e68ed0","fromSide":"bottom","toNode":"f5ca226093a5cc21","toSide":"top"},
+		{"id":"dc7a17df4f8f19ea","fromNode":"b8b40dc9224a1e30","fromSide":"top","toNode":"f5ca226093a5cc21","toSide":"bottom"},
+		{"id":"257d6dd48fa950cd","fromNode":"eff116114fafca43","fromSide":"left","toNode":"f5ca226093a5cc21","toSide":"right"},
+		{"id":"e3a6d5fefac7c258","fromNode":"a0383c31c0c6ceb8","fromSide":"bottom","toNode":"f5ca226093a5cc21","toSide":"top"}
+	]
+}

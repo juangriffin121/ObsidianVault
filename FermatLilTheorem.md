@@ -42,3 +42,19 @@ Therefore, a^p − a must be divisible by p, as promised.
 
 - Euler's theorem is a generalization of Fermat's little theorem: For any modulus n and any integer a coprime to n, one has:
     a^phi(n) 1 (mod n)
+
+This gives us a formula for easily computing modulo p inverses:
+$$a^{-1} = b \rightarrow b \cdot a = 1 ({mod(p)})$$
+$$a^{p-1} = 1 (mod(p)) \rightarrow a^{p-2}\cdot a = 1(mod(p))$$
+$$a^{p-2} = a^{-1}(mod(p)) $$
+
+the exponent p-1 always makes it 1, but there could be a smaller number that also makes it 1 for a. They call the smallest exponent that makes a 1 the *order of a modulo p*. all other numbers that make a 1 are divisible by it. Meaning that the order of a mod p divides p - 1.  
+
+
+
+
+
+
+
+
+
